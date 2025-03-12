@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Edit Plant - <%= plant.name %></title>
+    <title>Edit Trip - <%= trip.name %></title>
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
     <div class="container">
-      <h1>Edit Plant: <%= plant.name %></h1>
+      <h1>Edit Trip: <%= trip.name %></h1>
 
       <form
-        action="/plants/<%= plant._id %>?_method=PUT"
+        action="/trips/<%= trip._id %>?_method=PUT"
         method="POST"
         class="edit-form"
       >
@@ -20,22 +20,22 @@
           type="text"
           name="name"
           id="name"
-          value="<%= plant.name %>"
+          value="<%= trip.name %>"
           required
         />
 
         <label for="description">Description:</label>
         <textarea name="description" id="description" rows="3" required>
-<%= plant.description %></textarea
+<%= trip.description %></textarea
         >
 
         <label for="image">Image URL:</label>
-        <input type="text" name="image" id="image" value="<%= plant.image %>" />
+        <input type="text" name="image" id="image" value="<%= trip.image %>" />
 
         <button type="submit" class="save-button">Save Changes</button>
       </form>
 
-      <a href="/plants/" class="back-link">← Back to Plants</a>
+      <a href="/trips/" class="back-link">← Back to Trips</a>
     </div>
   </body>
 </html>

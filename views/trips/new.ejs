@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Create a Plant</title>
+    <title>Create a Trip</title>
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
     <div class="container">
-      <h1>Create a New Plant!</h1>
+      <h1>Create a New Trip!</h1>
 
-      <form action="/plants" method="POST" class="create-form">
+      <form action="/trips" method="POST" class="create-form">
         <label for="name">Name:</label>
         <input type="text" name="name" id="name" required />
 
@@ -25,10 +25,10 @@
         <label for="image">Image URL:</label>
         <input type="text" name="image" id="image" />
 
-        <button type="submit" class="add-button">Add Plant</button>
+        <button type="submit" class="add-button">Add Trip</button>
       </form>
 
-      <a href="/plants/" class="back-link">← Back to Plants</a>
+      <a href="/trips/" class="back-link">← Back to Trips</a>
     </div>
   </body>
 </html>

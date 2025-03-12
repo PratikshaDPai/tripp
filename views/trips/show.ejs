@@ -1,0 +1,41 @@
+<!-- views/trips/show.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= trip.name %></title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="trip-title"><%= trip.name %></h1>
+
+      <img
+        src="<%= trip.image %>"
+        alt="<%= trip.name %>"
+        class="trip-image"
+        onerror='this.src="/assets/placeholder.png"'
+        alt="<%= trip.name %> image"
+      />
+
+      <p class="trip-description"><%= trip.description %></p>
+
+      <div class="button-group">
+        <form action="/trips/<%=trip._id%>?_method=DELETE" method="POST">
+          <button type="submit" class="delete-button">
+            Delete <%= trip.name %>
+          </button>
+        </form>
+        <form action="/trips/<%=trip._id%>/edit" method="GET">
+          <button type="submit" class="edit-button">
+            Edit <%= trip.name %>
+          </button>
+        </form>
+      </div>
+
+      <a href="/trips" class="back-link">← Back to Trips</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trips Index</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>All Trips</h1>
+
+      <ul class="trip-list">
+        <% trips.forEach(trip => { %>
+        <li class="trip-card">
+          <a href="/trips/<%= trip._id %>">
+            <img
+              src="<%= trip.image %>"
+              alt="<%= trip.name %>"
+              class="thumbnail"
+              onerror='this.src="/assets/placeholder.png"'
+              alt="<%= trip.name %>"
+            />
+            <p class="trip-name"><%= trip.name %></p>
+          </a>
+        </li>
+        <% }); %>
+      </ul>
+      <nav>
+        <a href="/" class="back-link">← Go Back</a>
+        <a href="/trips/new" class="nav-link">Add New Trip</a>
+      </nav>
+    </div>
+  </body>
+</html>

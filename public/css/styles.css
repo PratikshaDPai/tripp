@@ -1,8 +1,8 @@
 /* styles.css */
 
 body {
-  background-color: #f7cdc0;
-  color: #6c886c;
+  background-color: #c0dcf7;
+  color: #6c8088;
   font-family: "Arial", sans-serif;
   display: flex;
   justify-content: center;
@@ -13,24 +13,24 @@ body {
 
 .vertical {
   flex-direction: column;
-  background-color: #f6baa7;
+  background-color: #a7cdf6;
 }
 
 h1 {
-  color: #6c886c;
+  color: #6c7d88;
   font-size: 2rem;
   margin-bottom: 10px;
 }
 
 .subtitle {
   font-size: 1.2rem;
-  color: #6c886c;
+  color: #6c8882;
   margin-bottom: 20px;
 }
 
 .container {
   text-align: center;
-  background-color: #e4ddd7;
+  background-color: #d7dfe4;
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
@@ -46,21 +46,21 @@ nav {
 }
 
 .nav-link {
-  background-color: #d3db88;
+  background-color: #88dbbd;
   padding: 10px 15px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
-  color: #6c886c;
+  color: #6c7388;
   transition: background 0.3s ease;
 }
 
 .nav-link:hover {
-  background-color: #c2c96e;
+  background-color: #6ebac9;
 }
 
-/* Plant List */
-.plant-list {
+/* Trip List */
+.trip-list {
   list-style: none;
   padding: 0;
   display: grid;
@@ -69,22 +69,22 @@ nav {
   justify-content: center;
 }
 
-.plant-description {
+.trip-description {
   font-size: 1.2rem;
-  color: #4f6f4f;
+  color: #5e4f6f;
   font-style: italic;
   margin-bottom: 15px;
 }
 
-.plant-card {
-  background: antiquewhite;
+.trip-card {
+  background: rgb(215, 219, 250);
   border-radius: 8px;
   padding: 10px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
 }
 
-.plant-card:hover {
+.trip-card:hover {
   transform: scale(1.05);
 }
 
@@ -95,29 +95,30 @@ nav {
   border-radius: 8px;
 }
 
-.plant-name {
+.trip-name {
   font-size: 1rem;
   color: #6c886c;
   margin-top: 5px;
   font-weight: bold;
 }
 
-/* Plant Title */
-.plant-title {
+/* Trip Title */
+.trip-title {
   font-size: 2rem;
   color: #6c886c;
   margin-bottom: 15px;
 }
 
-/* Plant Image */
-.plant-image {
+/* Trip Image */
+.trip-image,
+img {
   width: 100%;
   max-height: 300px;
   object-fit: scale-down;
   border-radius: 8px;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  background-color: antiquewhite;
+  background-color: rgb(215, 220, 250);
 }
 
 /* Button Group */
@@ -229,7 +230,7 @@ textarea {
   transform: scale(1.05);
 }
 
-/* Add Plant Button */
+/* Add Trip Button */
 .add-button,
 .get-started-button {
   background-color: #d3db88;

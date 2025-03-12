@@ -14,7 +14,7 @@ mongoose.connection.on("connected", () => {
   console.log(`Connected to MongoDB ${mongoose.connection.name}.`);
 });
 
-const Plant = require("./models/plant.js");
+const Trip = require("./models/trip.js");
 app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride("_method"));
 app.use(morgan("dev"));
@@ -23,41 +23,41 @@ app.use(express.static(path.join(__dirname, "public")));
 app.get("/", async (req, res) => {
   res.render("index.ejs");
 });
-// GET /plants
-app.get("/plants", async (req, res) => {
-  const allPlants = await Plant.find();
-  console.log(allPlants); // log the plants!
-  res.render("plants/index.ejs", { plants: allPlants });
+// GET /trips
+app.get("/trips", async (req, res) => {
+  const allTrips = await Trip.find();
+  console.log(allTrips); // log the trips!
+  res.render("trips/index.ejs", { trips: allTrips });
 });
 
-app.get("/plants/new", (req, res) => {
-  res.render("plants/new.ejs");
+app.get("/trips/new", (req, res) => {
+  res.render("trips/new.ejs");
 });
 
-app.get("/plants/:plantId/edit", async (req, res) => {
-  const foundPlant = await Plant.findById(req.params.plantId);
-  res.render("plants/edit.ejs", { plant: foundPlant });
+app.get("/trips/:tripId/edit", async (req, res) => {
+  const foundTrip = await Trip.findById(req.params.tripId);
+  res.render("trips/edit.ejs", { trip: foundTrip });
 });
 
-app.get("/plants/:plantId", async (req, res) => {
-  const foundPlant = await Plant.findById(req.params.plantId);
-  res.render("plants/show.ejs", { plant: foundPlant });
+app.get("/trips/:tripId", async (req, res) => {
+  const foundTrip = await Trip.findById(req.params.tripId);
+  res.render("trips/show.ejs", { trip: foundTrip });
 });
 
-app.put("/plants/:plantId", async (req, res) => {
-  console.log(req.params.plantId, req.body);
-  await Plant.findByIdAndUpdate(req.params.plantId, req.body);
-  res.redirect(`/plants/${req.params.plantId}`);
+app.put("/trips/:tripId", async (req, res) => {
+  console.log(req.params.tripId, req.body);
+  await Trip.findByIdAndUpdate(req.params.tripId, req.body);
+  res.redirect(`/trips/${req.params.tripId}`);
 });
 
-app.delete("/plants/:plantId", async (req, res) => {
-  await Plant.findByIdAndDelete(req.params.plantId);
-  res.redirect("/plants");
+app.delete("/trips/:tripId", async (req, res) => {
+  await Trip.findByIdAndDelete(req.params.tripId);
+  res.redirect("/trips");
 });
 
-app.post("/plants", async (req, res) => {
-  await Plant.create(req.body);
-  res.redirect("/plants");
+app.post("/trips", async (req, res) => {
+  await Trip.create(req.body);
+  res.redirect("/trips");
 });
 
 app.listen(8000, () => {
