@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Plant - <%= plant.name %></title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Edit Plant: <%= plant.name %></h1>
+
+      <form
+        action="/plants/<%= plant._id %>?_method=PUT"
+        method="POST"
+        class="edit-form"
+      >
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          value="<%= plant.name %>"
+          required
+        />
+
+        <label for="description">Description:</label>
+        <textarea name="description" id="description" rows="3" required>
+<%= plant.description %></textarea
+        >
+
+        <label for="image">Image URL:</label>
+        <input type="text" name="image" id="image" value="<%= plant.image %>" />
+
+        <button type="submit" class="save-button">Save Changes</button>
+      </form>
+
+      <a href="/plants/" class="back-link">← Back to Plants</a>
+    </div>
+  </body>
+</html>

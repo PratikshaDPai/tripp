@@ -1,0 +1,21 @@
+<!-- views/index.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plants App</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body class="vertical">
+    <div class="container">
+      <img src="/assets/placeholder.svg" class="logo" alt="plant logo" />
+      <h1>Welcome to the Plants App!</h1>
+      <p class="subtitle">An app for collecting your favorite plants.</p>
+      <form action="/plants" method="GET">
+        <button type="submit" class="get-started-button">Get Started!</button>
+      </form>
+    </div>
+  </body>
+</html>
