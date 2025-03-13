@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trips Index</title>
+    <title>Days Index</title>
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
@@ -13,7 +13,7 @@
       <ul class="trip-list">
         <% days.forEach(day => { %>
         <li class="trip-card">
-          <a href="/trips/<%= trip._id %>/<%= day._id %>">
+          <a href="/days/<%= day._id %>">
             <img
               src="<%= day.image %>"
               alt="<%= day.name %>"
@@ -28,7 +28,7 @@
       </ul>
       <nav>
         <a href="/" class="back-link">← Go Back</a>
-        <a href="/trips/<%= trip._id %>/new" class="nav-link">Add New Day</a>
+        <a href="/days/new" class="nav-link">Add New Day</a>
       </nav>
     </div>
   </body>

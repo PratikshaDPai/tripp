@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Day - <%= day.name %></title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Edit Day: <%= day.name %></h1>
+
+      <form
+        action="/days/<%= day._id %>?_method=PUT"
+        method="POST"
+        class="edit-form"
+      >
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          value="<%= day.name %>"
+          required
+        />
+
+        <label for="description">Description:</label>
+        <textarea name="description" id="description" rows="3" required>
+<%= day.description %></textarea
+        >
+
+        <label for="image">Image URL:</label>
+        <input type="text" name="image" id="image" value="<%= day.image %>" />
+
+        <button type="submit" class="save-button">Save Changes</button>
+      </form>
+
+      <a href="/days/" class="back-link">← Back to Days</a>
+    </div>
+  </body>
+</html>

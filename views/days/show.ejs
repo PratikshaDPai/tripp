@@ -1,0 +1,41 @@
+<!-- views/days/show.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= day.name %></title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="trip-title"><%= day.name %></h1>
+
+      <img
+        src="<%= day.image %>"
+        alt="<%= day.name %>"
+        class="trip-image"
+        onerror='this.src="/assets/placeholder.png"'
+        alt="<%= day.name %> image"
+      />
+
+      <p class="trip-description"><%= day.description %></p>
+
+      <div class="button-group">
+        <form action="/days/<%=day._id%>?_method=DELETE" method="POST">
+          <button type="submit" class="delete-button">
+            Delete <%= day.name %>
+          </button>
+        </form>
+        <form action="/days/<%=day._id%>/edit" method="GET">
+          <button type="submit" class="edit-button">
+            Edit <%= day.name %>
+          </button>
+        </form>
+      </div>
+
+      <a href="/days" class="back-link">← Back to Days</a>
+    </div>
+  </body>
+</html>

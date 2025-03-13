@@ -15,6 +15,7 @@ mongoose.connection.on("connected", () => {
 });
 
 const Trip = require("./models/trip.js");
+const Day = require("./models/day.js");
 app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride("_method"));
 app.use(morgan("dev"));
@@ -58,6 +59,42 @@ app.delete("/trips/:tripId", async (req, res) => {
 app.post("/trips", async (req, res) => {
   await Trip.create(req.body);
   res.redirect("/trips");
+});
+
+app.get("/days", async (req, res) => {
+  const allDays = await Day.find();
+  console.log(allDays); // log the days!
+  res.render("days/index.ejs", { days: allDays });
+});
+
+app.get("/days/new", (req, res) => {
+  res.render("days/new.ejs");
+});
+
+app.get("/days/:dayId/edit", async (req, res) => {
+  const foundDay = await Day.findById(req.params.dayId);
+  res.render("days/edit.ejs", { day: foundDay });
+});
+
+app.get("/days/:dayId", async (req, res) => {
+  const foundDay = await Day.findById(req.params.dayId);
+  res.render("days/show.ejs", { day: foundDay });
+});
+
+app.put("/days/:dayId", async (req, res) => {
+  console.log(req.params.dayId, req.body);
+  await Day.findByIdAndUpdate(req.params.dayId, req.body);
+  res.redirect(`/days/${req.params.dayId}`);
+});
+
+app.delete("/days/:dayId", async (req, res) => {
+  await Day.findByIdAndDelete(req.params.dayId);
+  res.redirect("/days");
+});
+
+app.post("/days", async (req, res) => {
+  await Day.create(req.body);
+  res.redirect("/days");
 });
 
 app.listen(8000, () => {

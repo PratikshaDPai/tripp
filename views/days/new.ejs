@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Create a Trip</title>
+    <title>Add Day</title>
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
     <div class="container">
-      <h1>Create a New Trip!</h1>
+      <h1>Add day</h1>
 
-      <form action="/trips/:tripId" method="POST" class="create-form">
+      <form action="/days" method="POST" class="create-form">
         <label for="name">Name:</label>
         <input type="text" name="name" id="name" required />
 
@@ -28,7 +28,7 @@
         <button type="submit" class="add-button">Add Day</button>
       </form>
 
-      <a href="/trips/:tripId" class="back-link">← Back to Days</a>
+      <a href="/days/" class="back-link">← Back to Days</a>
     </div>
   </body>
 </html>
