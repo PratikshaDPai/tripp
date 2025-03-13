@@ -15,7 +15,7 @@ mongoose.connection.on("connected", () => {
 });
 
 const Trip = require("./models/trip.js");
-const Day = require("./models/day.js");
+const { Day } = require("./models/day.js");
 app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride("_method"));
 app.use(morgan("dev"));
@@ -42,7 +42,7 @@ app.get("/trips/:tripId/edit", async (req, res) => {
 
 app.get("/trips/:tripId", async (req, res) => {
   const foundTrip = await Trip.findById(req.params.tripId);
-  res.render("trips/show.ejs", { trip: foundTrip });
+  res.render("days/index.ejs", { days: foundTrip.days });
 });
 
 app.put("/trips/:tripId", async (req, res) => {
