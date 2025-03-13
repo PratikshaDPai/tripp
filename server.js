@@ -75,17 +75,22 @@ app.get("/trips/:tripId/:dayId/edit", async (req, res) => {
 app.get("/trips/:tripId/:dayId", async (req, res) => {
   const foundTrip = await Trip.findById(req.params.tripId);
   const foundDay = foundTrip.days.id(req.params.dayId);
-  res.render("days/show.ejs", { day: foundDay });
+  res.render("days/show.ejs", { day: foundDay, trip: foundTrip });
 });
 
 app.put("/trips/:tripId/:dayId", async (req, res) => {
-  console.log(req.params.dayId, req.body);
-  await Day.findByIdAndUpdate(req.params.dayId, req.body);
-  res.redirect(`/days/${req.params.dayId}`);
+  const foundTrip = await Trip.findById(req.params.tripId);
+  const foundDay = foundTrip.days.id(req.params.dayId);
+  foundDay.set(req.body);
+  await foundTrip.save();
+  res.redirect(`/trips/${req.params.tripId}/${req.params.dayId}`);
 });
 
 app.delete("/trips/:tripId/:dayId", async (req, res) => {
-  await Day.findByIdAndDelete(req.params.dayId);
+  const foundTrip = await Trip.findById(req.params.tripId);
+  const foundDay = foundTrip.days.id(req.params.dayId);
+  foundTrip.days.remove(foundDay);
+  await foundTrip.save();
   res.redirect(`/trips/${req.params.tripId}`);
 });
 
