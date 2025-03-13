@@ -42,7 +42,7 @@ app.get("/trips/:tripId/edit", async (req, res) => {
 
 app.get("/trips/:tripId", async (req, res) => {
   const foundTrip = await Trip.findById(req.params.tripId);
-  res.render("days/index.ejs", { days: foundTrip.days });
+  res.render("days/index.ejs", { days: foundTrip.days, trip: foundTrip });
 });
 
 app.put("/trips/:tripId", async (req, res) => {
@@ -61,40 +61,40 @@ app.post("/trips", async (req, res) => {
   res.redirect("/trips");
 });
 
-app.get("/days", async (req, res) => {
-  const allDays = await Day.find();
-  console.log(allDays); // log the days!
-  res.render("days/index.ejs", { days: allDays });
+app.get("/trips/:tripId/new", async (req, res) => {
+  const foundTrip = await Trip.findById(req.params.tripId);
+  res.render("days/new.ejs", { trip: foundTrip });
 });
 
-app.get("/days/new", (req, res) => {
-  res.render("days/new.ejs");
+app.get("/trips/:tripId/:dayId/edit", async (req, res) => {
+  const foundTrip = await Trip.findById(req.params.tripId);
+  const foundDay = foundTrip.days.id(req.params.dayId);
+  res.render("days/edit.ejs", { day: foundDay, trip: foundTrip });
 });
 
-app.get("/days/:dayId/edit", async (req, res) => {
-  const foundDay = await Day.findById(req.params.dayId);
-  res.render("days/edit.ejs", { day: foundDay });
-});
-
-app.get("/days/:dayId", async (req, res) => {
-  const foundDay = await Day.findById(req.params.dayId);
+app.get("/trips/:tripId/:dayId", async (req, res) => {
+  const foundTrip = await Trip.findById(req.params.tripId);
+  const foundDay = foundTrip.days.id(req.params.dayId);
   res.render("days/show.ejs", { day: foundDay });
 });
 
-app.put("/days/:dayId", async (req, res) => {
+app.put("/trips/:tripId/:dayId", async (req, res) => {
   console.log(req.params.dayId, req.body);
   await Day.findByIdAndUpdate(req.params.dayId, req.body);
   res.redirect(`/days/${req.params.dayId}`);
 });
 
-app.delete("/days/:dayId", async (req, res) => {
+app.delete("/trips/:tripId/:dayId", async (req, res) => {
   await Day.findByIdAndDelete(req.params.dayId);
-  res.redirect("/days");
+  res.redirect(`/trips/${req.params.tripId}`);
 });
 
-app.post("/days", async (req, res) => {
-  await Day.create(req.body);
-  res.redirect("/days");
+app.post("/trips/:tripId", async (req, res) => {
+  const day = await Day.create(req.body);
+  const trip = await Trip.findById(req.params.tripId);
+  trip.days.push(day);
+  await trip.save();
+  res.redirect(`/trips/${req.params.tripId}`);
 });
 
 app.listen(8000, () => {
