@@ -37,9 +37,13 @@ app.get("/", async (req, res) => {
 });
 // GET /trips
 app.get("/trips", async (req, res) => {
-  const allTrips = await Trip.find();
-  console.log(allTrips); // log the trips!
-  res.render("trips/index.ejs", { trips: allTrips });
+  if (req.session.user) {
+    const allTrips = await Trip.find(); // TODO: find trips for a particular user
+    console.log(allTrips); // log the trips!
+    res.render("trips/index.ejs", { trips: allTrips });
+  } else {
+    res.redirect("auth/sign-in");
+  }
 });
 
 app.get("/trips/new", (req, res) => {
