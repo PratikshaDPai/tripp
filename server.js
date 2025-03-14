@@ -6,6 +6,8 @@ const methodOverride = require("method-override");
 const morgan = require("morgan");
 const path = require("path");
 const app = express();
+const session = require("express-session");
+const authController = require("./controllers/auth");
 
 // Connect to MongoDB using the connection string in the .env file
 mongoose.connect(process.env.MONGODB_URI);
@@ -20,6 +22,15 @@ app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride("_method"));
 app.use(morgan("dev"));
 app.use(express.static(path.join(__dirname, "public")));
+app.use(
+  session({
+    secret: process.env.SESSION_SECRET,
+    resave: false,
+    saveUninitialized: false,
+  })
+);
+
+app.use("/auth", authController);
 
 app.get("/", async (req, res) => {
   res.render("index.ejs");
