@@ -6,6 +6,7 @@ const tripSchema = new mongoose.Schema({
   description: { type: String, required: true },
   image: String,
   days: [daySchema],
+  users: [{ type: mongoose.Schema.Types.ObjectId, ref: "User", default: [] }],
 });
 
 const Trip = mongoose.model("Trip", tripSchema);

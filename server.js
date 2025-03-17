@@ -9,6 +9,8 @@ const app = express();
 const session = require("express-session");
 const authController = require("./controllers/auth");
 
+const port = process.env.PORT ? process.env.PORT : "8000";
+
 // Connect to MongoDB using the connection string in the .env file
 mongoose.connect(process.env.MONGODB_URI);
 // log connection status to terminal on start
@@ -32,18 +34,22 @@ app.use(
 
 app.use("/auth", authController);
 
+const authMiddleware = (req, res, next) => {
+  if (!req.session || !req.session.user) {
+    return res.redirect("/auth/sign-in"); // Redirect to sign-in page
+  }
+  next(); // User is authenticated, proceed to the next middleware
+};
+
 app.get("/", async (req, res) => {
   res.render("index.ejs");
 });
+
 // GET /trips
-app.get("/trips", async (req, res) => {
-  if (req.session.user) {
-    const allTrips = await Trip.find(); // TODO: find trips for a particular user
-    console.log(allTrips); // log the trips!
-    res.render("trips/index.ejs", { trips: allTrips });
-  } else {
-    res.redirect("auth/sign-in");
-  }
+app.get("/trips", authMiddleware, async (req, res) => {
+  const allTrips = await Trip.find(); // TODO: find trips for a particular user
+  console.log(allTrips); // log the trips!
+  res.render("trips/index.ejs", { trips: allTrips });
 });
 
 app.get("/trips/new", (req, res) => {
@@ -117,6 +123,6 @@ app.post("/trips/:tripId", async (req, res) => {
   res.redirect(`/trips/${req.params.tripId}`);
 });
 
-app.listen(8000, () => {
+app.listen(port, () => {
   console.log("Listening on port 8000");
 });
