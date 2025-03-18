@@ -7,6 +7,9 @@ const morgan = require("morgan");
 const path = require("path");
 const app = express();
 const session = require("express-session");
+// Initialize models
+const User = require("./models/user.js");
+
 const authController = require("./controllers/auth");
 
 const port = process.env.PORT ? process.env.PORT : "8000";
@@ -20,6 +23,7 @@ mongoose.connection.on("connected", () => {
 
 const Trip = require("./models/trip.js");
 const { Day } = require("./models/day.js");
+app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride("_method"));
 app.use(morgan("dev"));
@@ -36,13 +40,54 @@ app.use("/auth", authController);
 
 const authMiddleware = (req, res, next) => {
   if (!req.session || !req.session.user) {
-    return res.redirect("/auth/sign-in"); // Redirect to sign-in page
+    return res.redirect("/auth/sign-up"); // Redirect to sign-in page
   }
   next(); // User is authenticated, proceed to the next middleware
 };
 
-app.get("/", async (req, res) => {
-  res.render("index.ejs");
+app.get("/unauthorized", (req, res) => {
+  res.render("unauthorized.ejs");
+});
+
+const isSignedIn = require("./middleware/isSignedin.js");
+const passUserToView = require("./middleware/passUserToView.js");
+
+app.get("/", (req, res) => {
+  res.render("index.ejs", {
+    user: req.session.user,
+  });
+});
+
+app.use(isSignedIn);
+app.use(passUserToView);
+
+app.get("/search", (req, res) => {
+  res.render("search", { results: [] }); // Initial empty search results
+});
+
+app.get("/search/results", async (req, res) => {
+  const searchQuery = req.query.q; // Get the search query
+  try {
+    // Search for trips that contain days matching the search query
+    const trips = await Trip.find({
+      "days.name": { $regex: searchQuery, $options: "i" }, // search within days.name (can add more fields)
+    }).exec();
+
+    // Now we need to filter out days that match the search query
+    const results = [];
+    for (const trip of trips) {
+      const matchingDays = trip.days.filter(
+        (day) => day.name.match(new RegExp(searchQuery, "i")) // filter days based on the name match
+      );
+      matchingDays.forEach((day) => results.push({ trip, day }));
+    }
+
+    // Render the results on the search page
+    res.render("search", { results });
+  } catch (err) {
+    console.log(err);
+    res.status(500).send("Error during search");
+  }
 });
 
 // GET /trips
