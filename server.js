@@ -23,6 +23,7 @@ mongoose.connection.on("connected", () => {
 
 const Trip = require("./models/trip.js");
 const { Day } = require("./models/day.js");
+const Activity = require("./models/activity.js");
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: false }));
 app.use(methodOverride("_method"));
@@ -62,7 +63,8 @@ app.use(isSignedIn);
 app.use(passUserToView);
 
 app.get("/search", (req, res) => {
-  res.render("search", { results: [] }); // Initial empty search results
+  const query = req.params.q ?? "";
+  res.render("searchLocation", { results: [], query }); // Initial empty search results
 });
 
 app.get("/search/results", async (req, res) => {
@@ -88,6 +90,41 @@ app.get("/search/results", async (req, res) => {
     console.log(err);
     res.status(500).send("Error during search");
   }
+});
+
+app.get("/search/locations", async (req, res) => {
+  const searchQuery = req.query.q; // Get the search query from the URL parameterconst searchQuery = "paris"; // Example search string
+
+  const results = await Activity.aggregate([
+    {
+      $match: {
+        location: { $regex: searchQuery, $options: "i" }, // Match location containing the search query (case-insensitive)
+      },
+    },
+    {
+      $group: {
+        _id: "$location", // Group by the location field
+        activities: {
+          $push: {
+            title: "$title",
+            imageUrl: "$imageUrl",
+            cost: "$cost",
+          },
+        },
+      },
+    },
+    {
+      $project: {
+        _id: 0, // Remove the _id field
+        location: "$_id", // Rename _id to location
+        activities: 1, // Keep the activities array
+      },
+    },
+  ]);
+
+  console.log(results);
+
+  res.render("searchLocation", { results, query: searchQuery });
 });
 
 // GET /trips
