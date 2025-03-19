@@ -53,6 +53,7 @@ app.get("/unauthorized", (req, res) => {
 
 const isSignedIn = require("./middleware/isSignedin.js");
 const passUserToView = require("./middleware/passUserToView.js");
+const { resourceLimits } = require("worker_threads");
 
 app.get("/", (req, res) => {
   res.render("index.ejs", {
@@ -102,6 +103,63 @@ app.get("/search/locations/:locationId", async (req, res) => {
   console.log(results);
 
   res.render("searchLocation.ejs", { results, location });
+});
+
+app.get("/searchloc", async (req, res) => {
+  const query = req.query.q;
+  try {
+    const results = await Location.aggregate([
+      {
+        $match: {
+          $or: [
+            { name: { $regex: query, $options: "i" } },
+            { city: { $regex: query, $options: "i" } },
+            { country: { $regex: query, $options: "i" } },
+            { continent: { $regex: query, $options: "i" } },
+          ],
+        },
+      },
+      {
+        $addFields: {
+          score: {
+            $cond: {
+              if: {
+                $regexMatch: { input: "$name", regex: query, options: "i" },
+              },
+              then: 4, // Highest weight for name
+              else: {
+                $cond: {
+                  if: {
+                    $regexMatch: { input: "$city", regex: query, options: "i" },
+                  },
+                  then: 3,
+                  else: {
+                    $cond: {
+                      if: {
+                        $regexMatch: {
+                          input: "$country",
+                          regex: query,
+                          options: "i",
+                        },
+                      },
+                      then: 2,
+                      else: 1, // Lowest weight for continent
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+      { $sort: { score: -1 } }, // Sort by relevance score
+      { $limit: 10 }, // Get top 10 matches
+    ]);
+    res.json(results);
+  } catch (error) {
+    console.error("Error in location search:", error);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
 });
 
 // GET /trips
