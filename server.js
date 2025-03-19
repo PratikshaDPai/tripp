@@ -9,6 +9,7 @@ const app = express();
 const session = require("express-session");
 // Initialize models
 const User = require("./models/user.js");
+const Location = require("./models/location.js");
 
 const authController = require("./controllers/auth");
 
@@ -92,39 +93,15 @@ app.get("/search/results", async (req, res) => {
   }
 });
 
-app.get("/search/locations", async (req, res) => {
-  const searchQuery = req.query.q; // Get the search query from the URL parameterconst searchQuery = "paris"; // Example search string
+app.get("/search/locations/:locationId", async (req, res) => {
+  const locationId = req.params.locationId;
 
-  const results = await Activity.aggregate([
-    {
-      $match: {
-        location: { $regex: searchQuery, $options: "i" }, // Match location containing the search query (case-insensitive)
-      },
-    },
-    {
-      $group: {
-        _id: "$location", // Group by the location field
-        activities: {
-          $push: {
-            title: "$title",
-            imageUrl: "$imageUrl",
-            cost: "$cost",
-          },
-        },
-      },
-    },
-    {
-      $project: {
-        _id: 0, // Remove the _id field
-        location: "$_id", // Rename _id to location
-        activities: 1, // Keep the activities array
-      },
-    },
-  ]);
+  const results = await Activity.find({ location: locationId });
+  const location = await Location.findById(locationId);
 
   console.log(results);
 
-  res.render("searchLocation", { results, query: searchQuery });
+  res.render("searchLocation.ejs", { results, location });
 });
 
 // GET /trips
