@@ -1,0 +1,40 @@
+<nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/search">Search</a></li>
+
+    <li>
+      <a href="/trips">Trips</a>
+      <ul>
+        <% if (trips && trips.length > 0) { %> <% trips.forEach(trip => { %>
+        <li>
+          <a href="/trips/<%= trip._id %>"><%= trip.name %></a>
+          <ul>
+            <% if (trip.days && trip.days.length > 0) { %> <%
+            trip.days.forEach(day => { %>
+            <li>
+              <a href="/trips/<%= trip._id %>/<%= day._id %>"
+                ><%= day.name %></a
+              >
+            </li>
+            <% }) %> <% } else { %>
+            <li>No days available</li>
+            <% } %>
+          </ul>
+        </li>
+        <% }) %> <% } else { %>
+        <li>No trips available</li>
+        <% } %>
+      </ul>
+    </li>
+
+    <li><a href="/users">Users</a></li>
+
+    <% if (user) { %>
+    <li><a href="/auth/sign-out">Sign Out</a></li>
+    <% } else { %>
+    <li><a href="/auth/sign-in">Sign In</a></li>
+    <li><a href="/auth/sign-up">Sign Up</a></li>
+    <% } %>
+  </ul>
+</nav>

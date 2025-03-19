@@ -55,6 +55,17 @@ const isSignedIn = require("./middleware/isSignedin.js");
 const passUserToView = require("./middleware/passUserToView.js");
 const { resourceLimits } = require("worker_threads");
 
+app.use(async (req, res, next) => {
+  //sidebar middleware
+  try {
+    res.locals.trips = await Trip.find().populate("days");
+  } catch (error) {
+    console.error("Error fetching trips:", error);
+    res.locals.trips = [];
+  }
+  next();
+});
+
 app.get("/", (req, res) => {
   res.render("index.ejs", {
     user: req.session.user,
@@ -164,7 +175,7 @@ app.get("/searchloc", async (req, res) => {
 
 // GET /trips
 app.get("/trips", authMiddleware, async (req, res) => {
-  const allTrips = await Trip.find(); // TODO: find trips for a particular user
+  const allTrips = await Trip.find(); // TODO: get userid from session and add to find function
   console.log(allTrips); // log the trips!
   res.render("trips/index.ejs", { trips: allTrips });
 });
@@ -195,7 +206,7 @@ app.delete("/trips/:tripId", async (req, res) => {
 });
 
 app.post("/trips", async (req, res) => {
-  await Trip.create(req.body);
+  await Trip.create(req.body); //TODO: get userId from session and add
   res.redirect("/trips");
 });
 
