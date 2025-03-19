@@ -3,7 +3,8 @@ const mongoose = require("mongoose");
 // Define the schema for an activity
 const activitySchema = new mongoose.Schema({
   location: {
-    type: String,
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Location", // Reference to the Location model
     required: true,
   },
   imageUrl: {

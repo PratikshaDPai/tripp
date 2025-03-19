@@ -1,0 +1,786 @@
+name,lat,lng,type,city,country,continent
+abu simbel,22.3371195,31.6257973,archaeological_site,Abu Simbel City,Egypt,Africa
+acropolis museum,37.9685331,23.7284706,museum,Athens,Greece,Europe
+acropolis of athens,37.9716894,23.7263197,attraction,Athens,Greece,Europe
+adrspach,50.6189263,16.108519,village,Adršpach,Czechia,Europe
+aegean coast region turkey,39.0,35.0,country,,Turkey,Asia
+africa,11.5024338,17.7578122,continent,,,Africa
+agadir crocoparc,30.3893785,-9.4840294,zoo,Drarga,Morocco,Africa
+agafay desert,31.4872129,-8.1970725,village,Agafay,Morocco,Africa
+agia anna,34.9400531,33.4897191,city,Agia Anna,Cyprus,Asia
+airlie beach,-20.272494,148.7181466,neighbourhood,Whitsunday Regional,Australia,Oceania
+ait benhaddou,31.0451536,-7.1309706,city,Aït Benhaddou,Morocco,Africa
+ajaccio,41.9263991,8.7376029,city,Ajaccio,France,Europe
+ajman,25.5091287,55.3619072,state,,United Arab Emirates,Asia
+akumal,20.398797,-87.3173404,village,Akumal,Mexico,North America
+al khatim desert,,,,,,
+al marmoom conservation reserve dubai,24.7429971,55.4045796,nature_reserve,Ghadeer Barashy,United Arab Emirates,Asia
+alcatraz,15.2174703,-23.1032877,village,Alcatraz,Cape Verde,Africa
+alcazar of seville,37.3832105,-5.9901835,attraction,Seville,Spain,Europe
+algarve,-30.0344297,-51.0790679,neighbourhood,Alvorada,Brazil,South America
+alhambra,37.1760599,-3.5881103,castle,Granada,Spain,Europe
+alicante,38.3436365,-0.4881708,city,Alicante,Spain,Europe
+allianz arena,48.2187901,11.6236227,building,Munich,Germany,Europe
+alsace,33.98279,-118.4123635,neighbourhood,Alsace,United States,North America
+amalfi coast,26.3909491,-81.7838336,road,Lighthouse Bay at the Brooks,United States,North America
+amaze amsterdam,40.7518926,-73.9738545,restaurant,New York,United States,North America
+amed,37.9162222,40.2363542,city,Diyarbakır,Turkey,Asia
+amsterdam,52.3730796,4.8924534,city,Amsterdam,Netherlands,Europe
+andalusia,37.3399964,-4.5811614,state,,Spain,Europe
+anfield,53.4309164,-2.9609314,stadium,Liverpool,United Kingdom,Europe
+anne frank house,52.3751558,4.8840807,museum,Amsterdam,Netherlands,Europe
+antalya,36.8865728,30.7030242,city,Antalya,Turkey,Asia
+antalya province,36.9279654,30.7276865,state,,Turkey,Asia
+antelope canyon,33.1217413,-107.5908391,stream,,United States,North America
+ao nang,7.7211733,98.7655426,city,Ao Nang,Thailand,Asia
+apulia,40.9842539,16.6210027,state,,Italy,Europe
+aquaventure waterpark,18.3580389,109.7396551,hotel,Haitang District,China,Asia
+arena mexico,19.4246317,-99.1519833,stadium,Mexico City,Mexico,North America
+artis zoo,,,,,,
+asia,51.2086975,89.2343748,continent,,,Asia
+athens,37.9755648,23.7348324,city,Athens,Greece,Europe
+athinios ferry port,14.5833,120.9667,neighbourhood,Port Area,Philippines,Asia
+atlantic coast morocco,32.0,-6.0,country,,Morocco,Africa
+atlas mountains,31.0596827,-7.9000092,mountain_range,Toubkal ⵜⵓⴱⵇⴰⵍ توبقال,Morocco,Africa
+auckland region,-37.0114789,174.8505779,prison,Manurewa,New Zealand,Oceania
+auschwitz i,50.0264016,19.2039639,prison_camp,Oświęcim,Poland,Europe
+australia,-24.7761086,134.755,country,,Australia,Oceania
+austria,47.59397,14.12456,country,,Austria,Europe
+aveiro,40.640496,-8.6537841,city,Aveiro,Portugal,Europe
+azores,37.8085564,-25.4731374,state,,Portugal,Europe
+ba na hills,8.9930402,-79.5065491,building,San Francisco,Panama,South America
+bacalar,18.9407916,-88.6164282,county,,Mexico,North America
+baden wurttemberg,48.53775,9.041169,state,,Germany,Europe
+bahia palace,31.6216327,-7.9819376,castle,Marrakesh,Morocco,Africa
+balatonfured,46.9567254,17.888892,city,Balatonfüred,Hungary,Europe
+bali,-8.2271303,115.1919203,state,,Indonesia,Asia
+bali swing,-8.490486,115.2401167,attraction,Bongkasa,Indonesia,Asia
+balos beach,35.580943,23.5912082,beach,Municipality of Kissamos,Greece,Europe
+bandung,-6.9215529,107.6110212,city,Bandung City,Indonesia,Asia
+bangkok,13.7524938,100.4935089,city,Bangkok,Thailand,Asia
+baranya,45.9714436,18.1669246,county,,Hungary,Europe
+barcelona,41.3828939,2.1774322,city,Barcelona,Spain,Europe
+basilica cistern,41.0084029,28.9779226,cistern,Istanbul,Turkey,Europe
+basilica of our lady of guadalupe,19.4848583,-99.1178571,place_of_worship,Mexico City,Mexico,North America
+batoemadeg,-8.7465,115.5069,city,Batumadeg Kaja,Indonesia,Asia
+bavaria,48.9467562,11.4038717,state,,Germany,Europe
+bay of islands,-35.2550085,174.1626731,bay,,New Zealand,Oceania
+belem tower,38.6915977,-9.2159218,attraction,Lisbon,Portugal,Europe
+belfast,54.596391,-5.9301829,city,Belfast,United Kingdom,Europe
+belvedere palace,41.905036,12.4563484,building,Vatican City,Vatican City,Europe
+belvedere palace museum,39.91672,116.39078,point_of_interest,,China,Asia
+ben youssef madrasa,31.6320046,-7.9864346,building,Marrakesh,Morocco,Africa
+benagil sea cave,41.81682,12.94055,city,Cave,Italy,Europe
+benidorm,38.5406255,-0.1290929,city,Benidorm,Spain,Europe
+berlengas archipelago,,,,,,
+berlin,52.510885,13.3989367,city,Berlin,Germany,Europe
+big buddha phuket,7.827521,98.3124447,place_of_worship,Karon,Thailand,Asia
+bintan island,1.0196577,104.5698189,island,Bintan Island,Indonesia,Asia
+birmingham,52.4796992,-1.9026911,city,Birmingham,United Kingdom,Europe
+black desert,41.0832259,-118.7969914,desert,,United States,North America
+black forest,48.2634439,8.1647488,region,,Germany,Europe
+blue mountains,-33.609741,150.4052237,mountain_range,,Australia,Oceania
+bodrum,37.0343987,27.430651,city,Bodrum,Turkey,Asia
+bohemia czechia,50.0601579,13.8307479,state,,Czechia,Europe
+bohemia,40.7694091,-73.1148664,hamlet,Town of Islip,United States,North America
+bohemian switzerland,53.8652995,27.5388542,building,Minsk,Belarus,Europe
+bologna,44.4938203,11.3426327,city,Bologna,Italy,Europe
+bordeaux,44.841225,-0.5800364,city,Bordeaux,France,Europe
+borobudur,-7.6079583,110.2038245,attraction,Borobudur,Indonesia,Asia
+borsod abauj zemplen,48.2397936,21.1353474,county,,Hungary,Europe
+bosphorus strait,43.0609037,131.9254749,bay,Vladivostok,Russia,Asia
+boston,42.3554334,-71.060511,city,Boston,United States,North America
+bregenz,47.5025779,9.7472924,city,Bregenz,Austria,Europe
+bregenzerwald,47.3870288,9.9560636,region,,Austria,Europe
+bremen,53.0758196,8.8071646,city,Bremen,Germany,Europe
+bremen state,50.724998,10.0034611,village,Geisa,Germany,Europe
+brighton,50.8214626,-0.1400561,city,Brighton,United Kingdom,Europe
+brittany,48.2640845,-2.9202408,county,,France,Europe
+broadway new york city,40.7990843,-73.9684468,road,New York,United States,North America
+buckingham palace,51.5008349,-0.1430045,castle,London,United Kingdom,Europe
+buda castle,47.4959913,19.0398008,attraction,Budapest,Hungary,Europe
+budapest,47.4813896,19.1460941,region,,Hungary,Europe
+burgenland,47.5000001,16.4166666,state,,Austria,Europe
+burj al arab,25.1413271,55.1853967,hotel,Umm Suqeim 3,United Arab Emirates,Asia
+burj khalifa,25.1970336,55.2741329,attraction,Dubai,United Arab Emirates,Asia
+byron bay,-28.6483333,153.6177778,city,Byron Bay,Australia,Oceania
+cabo san lucas,22.8938884,-109.92006,city,Cabo San Lucas,Mexico,North America
+cairns,-16.9206657,145.7721854,city,Cairns,Australia,Oceania
+cairo,30.0443879,31.2357257,city,Cairo,Egypt,Africa
+cairo region,24.7592281,46.5732997,road,Ad Dir`iyah,Saudi Arabia,Asia
+california,36.7014631,-118.755997,state,,United States,North America
+caminito del rey,36.9159813,-4.7723818,road,Ardales,Spain,Europe
+canary islands,28.2935785,-16.6214471,state,,Spain,Europe
+cancun,21.1527467,-86.8425761,city,Cancún,Mexico,North America
+canggu,-8.6506193,115.1365007,county,,Indonesia,Asia
+canon city,38.4422506,-105.2348795,city,Cañon City,United States,North America
+cao bang,22.7426936,106.1060926,state,,Vietnam,Asia
+cappadocia,41.9815716,13.2766093,village,Cappadocia,Italy,Europe
+capri,40.5488429,14.2283708,island,Anacapri,Italy,Europe
+carinthia,46.7500001,13.8333333,state,,Austria,Europe
+casablanca,33.5738331,-7.6153131,city,Casablanca,Morocco,Africa
+cat ba island,20.7221491,107.0543571,viewpoint,Hải Phòng,Vietnam,Asia
+cathedral of santa maria del fiore,43.77323,11.25599,point_of_interest,Florence,Italy,Europe
+cavusin,38.6708281,34.8394555,village,Avanos,Turkey,Asia
+central bohemian region,50.0601579,13.8307479,administrative,,Czechia,Europe
+central hungary,47.4198296,19.3536689,region,,Hungary,Europe
+central java,-7.3032412,110.0044145,state,,Indonesia,Asia
+central park,40.7827725,-73.9653627,park,New York,United States,North America
+central transdanubia,47.2268957,18.0267315,region,,Hungary,Europe
+central vietnam,21.0398649,105.8369694,building,Hà Nội,Vietnam,Asia
+cham islands,15.8782122,108.3882042,information,Hội An,Vietnam,Asia
+champagne,45.831944,-0.906667,village,Champagne,France,Europe
+chao phraya river,14.622112,100.4543602,river,,Thailand,Asia
+charleston,32.7884363,-79.9399309,city,Charleston,United States,North America
+chiang mai,18.7882778,98.9858802,city,Chiang Mai City Municipality,Thailand,Asia
+chiapas,16.5000001,-92.5000001,state,,Mexico,North America
+chicago,41.8755616,-87.6244212,city,Chicago,United States,North America
+chicago river,41.8888005,-87.6226207,river,Chicago,United States,North America
+chichen itza,20.6828519,-88.5687196,archaeological_site,San Felipe Nuevo,Mexico,North America
+chopin concert hall,50.0640057,19.9374506,theatre,Krakow,Poland,Europe
+cinque terre,44.1222144,9.7132501,region,Vernazza,Italy,Europe
+clearwater,27.9658533,-82.8001026,city,Clearwater,United States,North America
+clementinum,50.0866547,14.4161186,attraction,Capital City of Prague,Czechia,Europe
+cochem,50.1483916,7.1663195,city,Cochem,Germany,Europe
+coco bongo cancun,21.1328973,-86.7472066,nightclub,Cancún,Mexico,North America
+coimbra,40.2111931,-8.4294632,city,Coimbra,Portugal,Europe
+cologne,50.938361,6.959974,city,Cologne,Germany,Europe
+colorado,38.7251776,-105.607716,state,,United States,North America
+colosseum,41.8909421,12.491903,road,Rome,Italy,Europe
+community of madrid,40.5248319,-3.7715628,state,,Spain,Europe
+como,45.9394759,9.1494101,county,,Italy,Europe
+contoy island,65.0,-18.0,country,,Iceland,Europe
+cordoba,-31.4166867,-64.1834193,city,Cordoba,Argentina,South America
+corfu,39.591337,19.8596189,island,Corfu,Greece,Europe
+corfu town,39.6268419,19.9203452,information,Corfu,Greece,Europe
+cornwall,50.4433489,-4.6246566,peninsula,,United Kingdom,Europe
+coromandel peninsula,-36.9811594,175.6785237,peninsula,,New Zealand,Oceania
+corsica,42.1880896,9.0684138,county,,France,Europe
+costa brava,41.7037675,2.9415943,region,,Spain,Europe
+cozumel,20.4320599,-86.9206906,island,Isla Cozumel,Mexico,North America
+crete,35.3084952,24.4633423,island,Crete,Greece,Europe
+cu chi tunnels,11.0628579,106.5292334,attraction,Ho Chi Minh City,Vietnam,Asia
+czechia,49.7439047,15.3381061,country,,Czechia,Europe
+da nang,16.068,108.212,city,Đà Nẵng,Vietnam,Asia
+daintree rainforest,-16.16968,145.41841,county,,Australia,Oceania
+dalat,2.701079,111.960895,county,,Malaysia,Asia
+damnoen saduak floating market,13.5197624,99.9593519,marketplace,Damnoen Saduak,Thailand,Asia
+danube river hungary,47.0,20.0,country,,Hungary,Europe
+destin,30.3935337,-86.4957834,city,Destin,United States,North America
+disneyland paris,48.8700934,2.7740499,resort,Coupvray,France,Europe
+dohany street synagogue,47.4961024,19.0608682,place_of_worship,Budapest,Hungary,Europe
+dolmabahce palace,41.0389605,28.9997735,park,Beşiktaş,Turkey,Asia
+dolphin world,26.9909985,33.8521691,theme_park,Safaga,Egypt,Africa
+dordogne,45.1429198,0.6321258,county,,France,Europe
+dorset,50.7968368,-2.3447323,county,,United Kingdom,Europe
+dortmund,51.5142273,7.4652789,city,Dortmund,Germany,Europe
+doubtful sound,-45.3738793,167.0865205,bay,Fiordland Community,New Zealand,Oceania
+douro river,41.453397,-5.1252011,river,,Spain,Europe
+douro valley,48.8273435,2.5426266,shop,Villiers-sur-Marne,France,Europe
+drenthe,52.9067922,6.6368423,state,,Netherlands,Europe
+dresden,51.0493286,13.7381437,city,Dresden,Germany,Europe
+dubai aquarium underwater zoo,25.1977146,55.2788456,aquarium,Dubai,United Arab Emirates,Asia
+dubai frame,25.235456,55.3003671,museum,Dubai,United Arab Emirates,Asia
+dubai,25.0742823,55.1885387,administrative,,United Arab Emirates,Asia
+dubai mall,25.197044,55.2789516,attraction,Dubai,United Arab Emirates,Asia
+dubai marina,25.0786415,55.1352524,neighbourhood,Dubai Marina,United Arab Emirates,Asia
+dunedin,-45.8740984,170.5035755,city,Dunedin,New Zealand,Oceania
+edge,30.8899124,-96.2946839,hamlet,Edge,United States,North America
+edinburgh castle,55.9486867,-3.2004175,attraction,City of Edinburgh,United Kingdom,Europe
+edinburgh,55.9533456,-3.1883749,city,City of Edinburgh,United Kingdom,Europe
+edith falls,10.7207378,-61.6280437,waterfall,,Trinidad and Tobago,North America
+eger,47.8989887,20.3743665,city,Eger,Hungary,Europe
+egypt,26.2540493,29.2675469,country,,Egypt,Africa
+egyptian museum of antiquities,30.0479633,31.2336077,museum,Cairo,Egypt,Africa
+eiffel tower,48.8582599,2.2945006,building,Paris,France,Europe
+eiffel tower summit,40.74149,-74.35959,city,Summit,United States of America,North America
+eindhoven,51.4392648,5.478633,city,Eindhoven,Netherlands,Europe
+el chorro,46.2073807,6.1558891,fountain,Geneva,Switzerland,Europe
+elafonisi,35.2694547,23.5316352,islet,Municipality of Kissamos,Greece,Europe
+elbphilharmonie,53.5412916,9.9842058,theatre,Hamburg,Germany,Europe
+elephant jungle sanctuary phuket,7.9189275,98.3302278,attraction,Kathu,Thailand,Asia
+emirate of dubai,25.1079201,55.4138761,university,Al Ruwayyah 3,United Arab Emirates,Asia
+emirate of sharjah,25.2311534,54.2190083,state,,United Arab Emirates,Asia
+empire state building,40.7484421,-73.9856589,attraction,New York,United States,North America
+energylandia,49.9995324,19.4095288,theme_park,Zator,Poland,Europe
+ephesus,37.9404455,27.3393194,archaeological_site,Selçuk,Turkey,Asia
+europa park,48.2649865,7.720728,theme_park,Rust,Germany,Europe
+europe,51.0,10.0,continent,,,Europe
+everglades national park,25.37217,-80.88182,land_feature,,United States of America,North America
+fabrique des lumieres amsterdam,52.3861071,4.8721438,attraction,Amsterdam,Netherlands,Europe
+faliraki,36.3403146,28.2019955,village,Faliraki,Greece,Europe
+fansipan,22.3033314,103.7753412,peak,Sa Pa,Vietnam,Asia
+farsha cafe sharm el sheikh,27.8497811,34.3075524,bar,Sharm El Sheikh,Egypt,Asia
+ferrari world abu dhabi,24.484072,54.6098893,theme_park,Abu Dhabi,United Arab Emirates,Asia
+fes,34.0346534,-5.0161926,city,Fez,Morocco,Africa
+fes meknes,33.8333136,-4.8556382,region,,Morocco,Africa
+fethiye,36.6221019,29.1153234,city,Fethiye,Turkey,Asia
+fiordland,-45.1224313,167.7007162,city,Fiordland Community,New Zealand,Oceania
+fira,41.3519228,2.130679,railway,l'Hospitalet de Llobregat,Spain,Europe
+fisherman s bastion,47.5023052,19.0346998,attraction,Budapest,Hungary,Europe
+florence,43.7697955,11.2556404,city,Florence,Italy,Europe
+flores indonesia,-8.5099861,120.5981501,island,Flores,Indonesia,Asia
+florida,27.7567667,-81.4639835,state,,United States,North America
+formentera,38.7063909,1.4335266,city,Formentera,Spain,Europe
+france,46.603354,1.8883335,country,,France,Europe
+frankfurt,50.1106444,8.6820917,city,Frankfurt,Germany,Europe
+franz josef glacier,-43.4757369,170.198137,glacier,,New Zealand,Oceania
+fraser island,-25.24672,153.1468044,island,K'gari,Australia,Oceania
+french riviera,43.4264175,6.7226618,region,,France,Europe
+frida kahlo museum,19.3551412,-99.1623564,museum,Mexico City,Mexico,North America
+friesland,53.467993,8.0221914,county,,Germany,Europe
+fuerteventura,28.4003769,-14.0048697,island,Fuerteventura,Spain,Europe
+fujairah,25.3367281,56.1727043,state,,United Arab Emirates,Asia
+fuji q highland,35.4849962,138.777933,theme_park,Fujikawaguchiko,Japan,Asia
+fukuoka,33.6251241,130.6180016,state,,Japan,Asia
+fukuoka prefecture,33.6251241,130.6180016,state,,Japan,Asia
+galata tower,41.0256406,28.9742134,building,Beyoğlu,Turkey,Europe
+gallipoli peninsula,40.33333,26.5,state,,Turkey,Europe
+garuda wisnu kencana cultural park,-8.8103891,115.1667584,attraction,Ungasan,Indonesia,Asia
+gdansk,54.3706858,18.6129831,neighbourhood,Gdańsk,Poland,Europe
+gelderland,52.1014041,5.9515701,state,,Netherlands,Europe
+gellert baths,47.4838163,19.0509525,water_park,Budapest,Hungary,Europe
+genoa,44.40726,8.9338624,city,Genoa,Italy,Europe
+germany,51.1638175,10.4478313,country,,Germany,Europe
+ghibli museum,35.6961731,139.5706324,museum,Mitaka,Japan,Asia
+giethoorn,52.741105,6.077431,village,Giethoorn,Netherlands,Europe
+giftun island,27.2238304,33.9269401,island,Hurghada,Egypt,Africa
+gili air,-8.3577073,116.081162,island,Gili Air,Indonesia,Asia
+gili islands,-8.3503396,116.0362621,county,,Indonesia,Asia
+gili trawangan,-8.3503396,116.0362621,island,Gili Trawangan,Indonesia,Asia
+global village,37.7517997,-83.6566867,cliff,,United States,North America
+golden bridge ba na hills,41.55419,-91.53489,city,Hills,United States of America,North America
+goreme,41.6405124,23.0919289,village,Goreme,Bulgaria,Europe
+gran canaria,27.931,-15.606,island,Gran Canaria,Spain,Europe
+granada,37.1734995,-3.5995337,city,Granada,Spain,Europe
+grand bazaar,41.010988,28.9681758,attraction,Istanbul,Turkey,Europe
+grand canyon,36.0980405,-112.0962787,valley,,United States,North America
+grand egyptian museum,29.9945754,31.1190736,museum,Remaya Square,Egypt,Africa
+grand palace bangkok,13.7493514,100.4918643,attraction,Bangkok,Thailand,Asia
+graz,47.0708678,15.4382786,city,Graz,Austria,Europe
+great barrier reef,-16.35,145.9,reef,,Australia,Oceania
+great pyramid of giza,29.9791647,31.1342133,tomb,Giza,Egypt,Africa
+greater poland voivodeship,52.1458506,17.397672,state,,Poland,Europe
+greece,38.9953683,21.9877132,country,,Greece,Europe
+green island,22.6616764,121.492596,county,,Taiwan,Asia
+groningen netherlands,53.2190652,6.5680077,city,Groningen,Netherlands,Europe
+groningen province,-33.9467832,25.4925664,road,Van Der Stel,South Africa,Africa
+guadalajara,20.6720375,-103.338396,city,Guadalajara,Mexico,North America
+guia,37.1270278,-8.2996371,village,Albufeira,Portugal,Europe
+ha long bay,20.9084384,107.0682782,attraction,Hạ Long,Vietnam,Asia
+hagia sophia,41.0085045,28.9800112,place_of_worship,Istanbul,Turkey,Europe
+halkidiki,40.3309627,23.3621462,peninsula,,Greece,Europe
+hamburg,53.550341,10.000654,city,Hamburg,Germany,Europe
+hanoi,21.0283334,105.854041,city,Hà Nội,Vietnam,Asia
+hanover,52.3744779,9.7385532,city,Hanover,Germany,Europe
+hassan ii mosque,33.6082243,-7.6324728,place_of_worship,Casablanca,Morocco,Africa
+hawaii,19.5938015,-155.4283701,state,,United States,Oceania
+heineken experience,52.3578404,4.891784,museum,Amsterdam,Netherlands,Europe
+hessen,50.6080651,9.0284647,state,,Germany,Europe
+heybeliada,40.8774116,29.0992677,neighbourhood,Prince Islands,Turkey,Asia
+hiroshima,34.3917241,132.4517589,city,Hiroshima,Japan,Asia
+ho chi minh city,10.7763897,106.7011391,city,Ho Chi Minh City,Vietnam,Asia
+hobart,-42.8825088,147.3281233,city,Hobart,Australia,Oceania
+hobbiton movie set,-37.8579455,175.680909,theme_park,,New Zealand,Oceania
+hofburg palace,48.2063294,16.3656259,attraction,Vienna,Austria,Europe
+hoi an memories show,,,,,,
+hokkaido,43.4519831,142.8197834,state,,Japan,Asia
+houston,29.7589382,-95.3676974,city,Houston,United States,North America
+hradec kralove region,50.4093927,15.6850054,county,,Czechia,Europe
+hua hin,12.5699326,99.9573437,city,Hua Hin,Thailand,Asia
+hue vietnam,16.4639321,107.5863388,city,Huế,Vietnam,Asia
+hungarian parliament building,64.14677,-21.94023,point_of_interest,,Iceland,Europe
+hungarian state opera house,47.50287,19.0581677,attraction,Budapest,Hungary,Europe
+hungary,47.1817585,19.5060937,country,,Hungary,Europe
+hurghada desert,30.3393587,32.2828224,road,Fayed,Egypt,Africa
+hurghada,27.222556,33.8307062,city,Hurghada,Egypt,Africa
+hydra greece,37.3321076,23.4664237,island,Vlychos,Greece,Europe
+ibiza,38.9743901,1.4197463,county,,Spain,Europe
+ice pub,50.0854591,14.4138779,bar,Capital City of Prague,Czechia,Europe
+imperial city hue,16.4619,107.59546,city,Huế,Vietnam,Asia
+indonesia,-2.4833826,117.8902853,country,,Indonesia,Asia
+innsbruck,47.2654296,11.3927685,city,Innsbruck,Austria,Europe
+ishigaki,24.3444441,124.1851857,city,Ishigaki,Japan,Asia
+isla holbox,21.5545959,-87.333844,island,Holbox,Mexico,North America
+isla mujeres,21.2371906,-86.7350001,city,Isla Mujeres,Mexico,North America
+isle of skye,57.3630079,-6.3021737,island,Skye,United Kingdom,Europe
+isle of wight,50.6710482,-1.3327111,county,,United Kingdom,Europe
+istanbul,41.006381,28.9758715,city,Istanbul,Turkey,Europe
+italy,42.6384261,12.674297,country,,Italy,Europe
+izmir,38.23166,27.02997,state,,Turkey,Asia
+jackson hole,37.5115171,-88.6102995,water,,United States,North America
+jakarta,-6.1754049,106.827168,city,Special capital Region of Jakarta,Indonesia,Asia
+japan,36.5748441,139.2394179,country,,Japan,Asia
+jasna gora monastery,,,,,,
+java,42.6507,-78.38591,municipality,Town of Java,United States of America,North America
+jeronimos monastery,38.6977531,-9.2055912,building,Lisbon,Portugal,Europe
+jizera mountains,50.8261147,15.2131651,mountain_range,Bedřichov,Czechia,Europe
+johan cruijff arena,52.314353,4.9428431,stadium,Amsterdam,Netherlands,Europe
+kagawa prefecture,34.2480104,134.0586579,state,,Japan,Asia
+kaikoura,-42.4005999,173.6811428,city,Kaikōura,New Zealand,Oceania
+kamakura,35.3192808,139.5469627,city,Kamakura,Japan,Asia
+kanazawa,36.561627,136.6568822,city,Kanazawa,Japan,Asia
+kangaroo island,-35.8182635,137.1566125,island,Kangaroo Island,Australia,Oceania
+kas turkey,36.1993752,29.6413365,city,Kaş,Turkey,Asia
+kasprowy wierch,49.2318014,19.9815609,peak,Zakopane,Poland,Europe
+kefalonia,38.2660322,20.5373903,island,Cephalonia,Greece,Europe
+kent,51.2070748,0.7210362,county,,United Kingdom,Europe
+keukenhof,52.2698728,4.5472566,attraction,Lisse,Netherlands,Europe
+khao sok national park,39.86595,-75.17879,city,National Park,United States of America,North America
+king power mahanakhon,13.7234074,100.5282227,building,Bangkok,Thailand,Asia
+klagenfurt,46.623943,14.3075976,city,Klagenfurt,Austria,Europe
+ko chang,12.1066431,102.3507809,municipality,Ko Chang,Thailand,Asia
+ko lan,12.9174502,100.7782008,island,Pattaya City,Thailand,Asia
+ko lanta,7.559842,99.0572888,island,Haad Khlong Khong,Thailand,Asia
+ko pha ngan,9.7349503,100.0305711,island,Ko Pha Ngan,Thailand,Asia
+ko tao,10.0921822,99.8395362,state,Ko Tao,Thailand,Asia
+koblenz,50.3533278,7.5943951,city,Koblenz,Germany,Europe
+koh samui,9.5013944,99.9956193,island,Ko Samui,Thailand,Asia
+komodo island,-8.5891905,119.4624119,village,Komodo Village,Indonesia,Asia
+kos,36.7936933,27.0848266,island,Kos,Greece,Europe
+krabi province,8.1111653,99.1097298,state,,Thailand,Asia
+krakow,50.0619474,19.9368564,city,Krakow,Poland,Europe
+kunsthistorisches museum,48.2037395,16.3617819,museum,Vienna,Austria,Europe
+kuranda scenic railway,-16.9256966,145.7711624,shop,Cairns,Australia,Oceania
+kyoto,35.0115754,135.7681441,city,Kyoto,Japan,Asia
+kyoto prefecture,35.242552,135.454601,state,,Japan,Asia
+kyushu region,-23.4452277,-51.9806979,road,Maringá,Brazil,South America
+labuan bajo,-8.4944201,119.8855688,city,Labuan Bajo,Indonesia,Asia
+lake como,45.9917589,9.264881,lake,,Italy,Europe
+lake district,53.6278516,-113.4686522,neighbourhood,Edmonton,Canada,North America
+lake tahoe,39.0885405,-120.0503528,lake,,United States,North America
+lan ha bay,20.7515722,107.1042778,bay,Hải Phòng,Vietnam,Asia
+lanzarote,29.013,-13.634,island,Lanzarote,Spain,Europe
+lao cai province,22.3069302,104.1829592,state,,Vietnam,Asia
+las vegas,36.2533896,-115.2794366,city,Las Vegas,United States,North America
+last supper,13.9638302,121.5241921,monument,Sariaya,Philippines,Asia
+legoland germany,48.4241936,10.3054256,theme_park,Günzburg,Germany,Europe
+leicestershire,52.666667,-1.0,county,,United Kingdom,Europe
+leiden,52.1594747,4.4908843,city,Leiden,Netherlands,Europe
+lesser poland,49.790952,20.3793521,state,,Poland,Europe
+liberec,50.7702648,15.0583947,city,Liberec,Czechia,Europe
+limburg province,-33.9521557,25.4977425,road,Glenroy Park,South Africa,Africa
+lindos acropolis,36.0911594,28.0885032,attraction,Lindos,Greece,Europe
+lindos,36.0915571,28.0854798,city,Lindos,Greece,Europe
+linz,48.3059078,14.286198,city,Linz,Austria,Europe
+lisbon district,38.9952469,-9.1435928,county,,Portugal,Europe
+lisbon,38.7077507,-9.1365919,city,Lisbon,Portugal,Europe
+lisbon metropolitan area,38.7077507,-9.1365919,city,Lisbon,Portugal,Europe
+lisbon oceanarium,38.76529,-9.09518,state,,Portugal,Europe
+lisse,52.2576098,4.5630329,city,Lisse,Netherlands,Europe
+liverpool,53.4071991,-2.99168,city,Liverpool,United Kingdom,Europe
+livraria lello irmao,41.1468317,-8.6148485,attraction,Porto,Portugal,Europe
+loch lomond,56.1561963,-4.6562105,lake,Balmaha,United Kingdom,Europe
+loch ness,57.2741222,-4.4849684,lake,Dores,United Kingdom,Europe
+lodz,51.7687323,19.4569911,city,Łódź,Poland,Europe
+loire valley chateaux,,,,,,
+loire valley,47.4492772,-0.349549,region,,France,Europe
+lombok,-8.5835637,116.3580819,island,Lombok,Indonesia,Asia
+londonderry derry,54.9978678,-7.3213056,city,Derry/Londonderry,United Kingdom,Europe
+loro parque,28.4086294,-16.5643184,zoo,Puerto de la Cruz,Spain,Europe
+los angeles,34.0536909,-118.242766,city,Los Angeles,United States,North America
+los cabos,43.5122922,-6.0973052,railway,Pravia,Spain,Europe
+loucha,37.7937783,20.7255401,village,Municipal Unit of Artemisia,Greece,Europe
+louvre museum,48.8611473,2.3380277,museum,Paris,France,Europe
+lovina,40.8280188,140.7342709,shop,Aomori,Japan,Asia
+lower antelope canyon,36.9031361,-111.4133303,road,,United States,North America
+lower austria,48.2817813,15.7632457,state,,Austria,Europe
+lower silesia province,51.1096542,17.0557365,building,Wrocław,Poland,Europe
+lubusz voivodeship,52.1001754,15.3605075,state,,Poland,Europe
+luxor,25.702096,32.647186,city,Luxor,Egypt,Africa
+maastricht,50.8512438,5.6909768,city,Maastricht,Netherlands,Europe
+madame tussauds amsterdam,52.3725869,4.8925927,attraction,Amsterdam,Netherlands,Europe
+madame tussauds london,51.5229231,-0.154855,attraction,London,United Kingdom,Europe
+madeira,32.7517501,-16.9817487,state,,Portugal,Europe
+madrid,40.4167047,-3.7035825,city,Madrid,Spain,Europe
+maeklong railway market,13.4077308,100.0009031,attraction,Samut Songkhram,Thailand,Asia
+mahmya island,65.0,-18.0,country,,Iceland,Europe
+majorelle garden,31.6414769,-8.0028984,park,Marrakesh,Morocco,Africa
+malang,-7.9771308,112.6340265,city,Malang,Indonesia,Asia
+mallorca,39.613432,2.8829185,island,Majorca,Spain,Europe
+manchester,53.4794892,-2.2451148,city,Manchester,United Kingdom,Europe
+mandurah,-32.5302495,115.7208782,municipality,City of Mandurah,Australia,Oceania
+marble mountains,16.00402,108.2627745,attraction,Đà Nẵng,Vietnam,Asia
+margaret island,47.5272928,19.0478668,neighbourhood,Budapest,Hungary,Europe
+marmaris,36.8522547,28.2742661,city,Marmaris,Turkey,Asia
+marrakech,31.6258257,-7.9891608,city,Marrakesh,Morocco,Africa
+marrakech safi,31.6048574,-8.3654032,region,,Morocco,Africa
+marsa alam desert,,,,,,
+marsa alam,25.069992,34.893817,city,Marsa Alam City,Egypt,Africa
+masurian lake district,53.857567,21.3394034,region,gmina Mrągowo,Poland,Europe
+matrouh governorate,29.9387816,26.4894728,state,,Egypt,Africa
+maui,20.8029568,-156.3106833,island,Maui,United States,Oceania
+mazatlan,23.2035785,-106.4208391,city,Mazatlán,Mexico,North America
+mazovia province,,,,,,
+mekong delta,9.7508958,105.2224602,region,,Vietnam,Asia
+melbourne,-37.8142454,144.9631732,city,Melbourne,Australia,Oceania
+memorial and museum auschwitz birkenau,49.5625,8.70694,city,Birkenau,Germany,Europe
+menorca,39.9492572,4.0499642,county,,Spain,Europe
+merida,38.9174665,-6.3443977,city,Merida,Spain,Europe
+meteora,39.7219048,21.6322316,region,Kastraki,Greece,Europe
+mexico city,19.4326296,-99.1331785,state,,Mexico,North America
+mexico,23.6585116,-102.0077097,country,,Mexico,North America
+miami,25.7741728,-80.19362,city,Miami,United States,North America
+milan cathedral,45.4641649,9.1916214,attraction,Milan,Italy,Europe
+milford sound,-44.6190189,167.8687603,bay,Fiordland Community,New Zealand,Oceania
+milos,36.709344,24.5068338,island,Milos,Greece,Europe
+miracle garden,52.3748816,4.8530243,garden,Amsterdam,Netherlands,Europe
+mleiha desert,,,,,,
+mont saint michel,48.6359541,-1.51146,attraction,Le Mont-Saint-Michel,France,Europe
+monterey,36.2231079,-121.387742,county,,United States,North America
+monterrey,25.6802019,-100.315258,city,Monterrey,Mexico,North America
+moravian silesian region,49.860275,18.0386541,county,,Czechia,Europe
+moreton island,-27.1926498,153.394318,island,Moreton Island,Australia,Oceania
+morocco,31.1728205,-7.3362482,country,,Morocco,Africa
+moulin rouge,48.8841094,2.3323564,theatre,Paris,France,Europe
+mount batur,-8.2394154,115.3779603,volcano,,Indonesia,Asia
+mount cook,-43.5950017,170.1421677,peak,,New Zealand,Oceania
+mount etna,40.7425444,-85.5619208,village,Mount Etna,United States,North America
+mount fuji,35.362799,138.730781,volcano,Oyama,Japan,Asia
+mount sinai,28.5388088,33.9751845,peak,Saint Catherine,Egypt,Asia
+mount teide,,,,,,
+mozarthaus vienna,48.2082174,16.3749334,museum,Vienna,Austria,Europe
+mt john observatory,-43.9854143,170.4644419,attraction,,New Zealand,Oceania
+mu ko ang thong national park,39.86595,-75.17879,city,National Park,United States of America,North America
+mugla province,37.23033,28.35571,state,,Turkey,Asia
+mui ne,10.9339717,108.2867552,neighbourhood,Phan Thiết,Vietnam,Asia
+musee d orsay,48.8599179,2.3265849,museum,Paris,France,Europe
+museum of the future,25.2191545,55.2818746,museum,Dubai,United Arab Emirates,Asia
+my son sanctuary,37.7762948,-122.4111736,social_facility,San Francisco,United States,North America
+mykonos,37.4513936,25.3923149,island,Mykonos,Greece,Europe
+nagoya,35.1851045,136.8998438,city,Nagoya,Japan,Asia
+naples,40.8358846,14.2487679,city,Naples,Italy,Europe
+nashville,36.1622767,-86.7742984,city,Nashville,United States,North America
+national museum of anthropology,40.4077571,-3.6890191,museum,Madrid,Spain,Europe
+nationalpark de biesbosch,51.74308,4.77339,state,,Netherlands,Europe
+navagio,37.859502,20.6248376,beach,Elaties Municipal Unit,Greece,Europe
+naxos,37.0600105,25.4707567,island,Naxos,Greece,Europe
+nelson bay,-32.7218138,152.1440889,hamlet,Port Stephens Council,Australia,Oceania
+nelson new zealand,-41.2710849,173.2836756,city,Nelson,New Zealand,Oceania
+netherlands,52.2434979,5.6343227,country,,Netherlands,Europe
+neuschwanstein castle,47.5575522,10.7496959,castle,Schwangau,Germany,Europe
+nevsehir province,,,,,,
+new jersey,40.0757384,-74.4041622,state,,United States,North America
+new orleans,29.9759983,-90.0782127,city,New Orleans,United States,North America
+new york city,40.7127281,-74.0060152,city,New York,United States,North America
+new york palace cafe,15.33686,120.70623,city,Cafe,Philippines,Asia
+new york state,43.1561681,-75.8449946,state,,United States,North America
+new zealand,-41.5000831,172.8344077,country,,New Zealand,Oceania
+nghe an province,19.1976001,105.060676,state,,Vietnam,Asia
+nha trang,12.2431693,109.1898675,city,Nha Trang,Vietnam,Asia
+ninh binh,20.2421142,105.9746207,railway,Hoa Lư,Vietnam,Asia
+ninh binh province,20.2051051,105.9280678,state,,Vietnam,Asia
+nograd county,48.0,19.58333,state,,Hungary,Europe
+noosa,-26.3181415,152.9314093,municipality,Noosa Shire,Australia,Oceania
+normandy,49.0677708,0.3138532,county,,France,Europe
+norte region,53.9797171,69.0450902,state,,Kazakhstan,Asia
+north america,51.0000002,-109.0,continent,,,North America
+north brabant,51.6017723,5.4441391,state,,Netherlands,Europe
+north holland,52.7212825,4.820665,state,,Netherlands,Europe
+north island,-38.0035304,175.957821,island,North Island,New Zealand,Oceania
+north rhine westphalia,51.4789205,7.5543751,state,,Germany,Europe
+north wales,40.2109404,-75.2782317,city,North Wales,United States,North America
+northern hungary,47.9437605,20.3212889,region,,Hungary,Europe
+northern italy,42.83333,12.83333,country,,Italy,Europe
+northern morocco,32.0,-6.0,country,,Morocco,Africa
+northern vietnam,16.16667,107.83333,country,,Vietnam,Asia
+northland,-35.3755091,173.9470106,state,,New Zealand,Oceania
+northumberland,55.25,-2.000559,county,,United Kingdom,Europe
+notre dame cathedral,49.6095961,6.1315787,place_of_worship,Luxembourg,Luxembourg,Europe
+nusa dua,-8.8016777,115.2239305,city,Nusa Dua,Indonesia,Asia
+nusa lembongan,-8.6789419,115.4573313,island,Jungutbatu,Indonesia,Asia
+nusa penida,-8.7456524,115.534745,island,Batukandik,Indonesia,Asia
+oahu,21.43333,-157.96667,county,Oahu,United States of America,Oceania
+oasiria water park,31.5820347,-8.0149727,water_park,Tassoultante,Morocco,Africa
+oaxaca de juarez,17.0965868,-96.7207816,county,,Mexico,North America
+oaxaca state,19.6603287,-99.3792304,road,Ciudad Nicolás Romero,Mexico,North America
+oceania,-12.7725835,173.7741688,continent,,,Oceania
+okayama prefecture,34.8581334,133.7759256,state,,Japan,Asia
+okinawa,26.5707754,128.0255901,state,,Japan,Asia
+oktoberfest,39.344405,-84.2669061,hamlet,Mason,United States,North America
+olivia jones bar,53.5510114,9.9575793,bar,Hamburg,Germany,Europe
+oljato monument valley,36.9810645,-110.2166924,hamlet,Oljato-Monument Valley,United States,North America
+orange bay,18.3663171,-78.3141089,bay,Negril,Jamaica,North America
+oriental,33.3202138,-2.4238471,region,,Morocco,Africa
+orkney,58.9418231,-3.1296944,county,,United Kingdom,Europe
+orlando,28.5421109,-81.3790304,city,Orlando,United States,North America
+osaka castle,34.6873735,135.5258555,building,Osaka,Japan,Asia
+osaka,34.6937569,135.5014539,city,Osaka,Japan,Asia
+osaka prefecture,34.6198813,135.490357,state,,Japan,Asia
+oskar schindler s factory,50.0474553,19.9617094,museum,Krakow,Poland,Europe
+ostrava,49.8349139,18.2820084,city,Ostrava,Czechia,Europe
+ourika valley,31.1964127,-7.7800648,farmland,Sti Fadma,Morocco,Africa
+ouzoud waterfalls,,,,,,
+oxford,51.7520131,-1.2578499,city,Oxford,United Kingdom,Europe
+page arizona,36.9148305,-111.457294,city,Page,United States,North America
+palace of knossos,35.2980733,25.161437,museum,Heraklion Municipal Unit,Greece,Europe
+palace of versailles,48.8044252,2.1202853,attraction,Versailles,France,Europe
+palais garnier,48.8720949,2.3323339,restaurant,Paris,France,Europe
+palermo,38.1112268,13.3524434,city,Palermo,Italy,Europe
+palmeraie marrakech,31.6747627,-7.982627,attraction,Marrakesh,Morocco,Africa
+pamukkale hot springs,37.9627923,29.1083952,spring,Pamukkale,Turkey,Asia
+pantheon rome,41.8986159,12.4768334,place_of_worship,Rome,Italy,Europe
+paradise island,25.0833551,-77.3063342,island,Nassau,Bahamas,North America
+paradise valley,33.5428006,-111.9556001,neighbourhood,Paradise Valley,United States,North America
+paris catacombs,48.8337437,2.3322959,museum,Paris,France,Europe
+paris,48.8534951,2.3483915,city,Paris,France,Europe
+park guell,41.4142347,2.1524576,park,Barcelona,Spain,Europe
+paros,37.0651494,25.1919784,island,Paros,Greece,Europe
+parthenon,37.9715033,23.7266177,attraction,Athens,Greece,Europe
+pena palace,,,,,,
+petrin lookout tower,47.80547,-92.27461,city,Tower,United States of America,North America
+phi phi islands,7.7522403,98.7766434,city,Ao Nang,Thailand,Asia
+philae,24.0209724,32.8895963,islet,Aswan,Egypt,Africa
+phillip island,-38.5071781,145.1888103,island,Ventnor,Australia,Oceania
+phu quoc island,10.2287856,104.0143592,island,Phu Quoc Island,Vietnam,Asia
+phu quoc,10.2170911,103.9590544,city,Phú Quốc,Vietnam,Asia
+phuket,7.9366015,98.3529292,state,,Thailand,Asia
+pico do arieiro,32.7355733,-16.9286501,peak,Santana,Portugal,Europe
+pilsner urquell brewery,49.7512565,13.3938554,neighbourhood,Pilsen,Czechia,Europe
+piste mexico,20.6998856,-88.590104,hospital,Pisté,Mexico,North America
+playa el cielo,20.3144878,-87.0103655,beach,,Mexico,North America
+plzen region,49.5228102,13.2063118,county,,Czechia,Europe
+pokolbin,-32.7792106,151.2978747,hamlet,Cessnock City Council,Australia,Oceania
+poland,52.215933,19.134422,country,,Poland,Europe
+pomerania province,43.4652075,-3.8182195,shop,Santander,Spain,Europe
+pompei campania,40.7491267,14.5006415,city,Pompei,Italy,Europe
+pompeii archaeological site,,,,,,
+port arthur,29.8716577,-93.9332302,city,Port Arthur,United States,North America
+port aventura world,41.0931822,1.1573417,hotel,Vila-seca,Spain,Europe
+port stephens,-32.728465,151.9380101,municipality,Port Stephens Council,Australia,Oceania
+portimao,37.1375808,-8.5368426,city,Portimão,Portugal,Europe
+porto district,41.2366885,-8.3020183,county,,Portugal,Europe
+porto,41.1494512,-8.6107884,city,Porto,Portugal,Europe
+porto santo island,33.07054,-16.34508,municipality,Porto Santo,Portugal,Europe
+portugal,39.6621648,-8.1353519,country,,Portugal,Europe
+potsdam,52.4009309,13.0591397,city,Potsdam,Germany,Europe
+pounta,37.0381396,25.1013183,village,Pounta,Greece,Europe
+prague astronomical clock,,,,,,
+prague castle,50.0908114,14.4005225,castle,Capital City of Prague,Czechia,Europe
+prague,50.0596288,14.4464593,neighbourhood,Capital City of Prague,Czechia,Europe
+prague lego museum,,,,,,
+prague national museum,50.078919,14.4309678,museum,Capital City of Prague,Czechia,Europe
+prague zoo,50.1174212,14.4058116,zoo,Capital City of Prague,Czechia,Europe
+prater,48.1916483,16.4433311,recreation_ground,Vienna,Austria,Europe
+princes islands,-34.1770001,172.0431435,archipelago,,New Zealand,Oceania
+provence,46.8914636,6.7270271,village,Provence,Switzerland,Europe
+province of palermo,-12.6975387,-74.4956893,village,El Carmen,Peru,South America
+province of verona,-12.0115871,-77.0581062,road,San Martín de Porres,Peru,South America
+puebla,18.833333,-98.0,state,,Mexico,North America
+puebla state,19.3340651,-98.9135488,road,Ixtapaluca,Mexico,North America
+puerto escondido,9.0142629,-76.2625983,city,Puerto Escondido,Colombia,South America
+puerto vallarta,20.6407176,-105.220306,city,Puerto Vallarta,Mexico,North America
+puffing billy railway,-37.9071075,145.3570285,attraction,Melbourne,Australia,Oceania
+pyramids of giza,29.9716223,31.1283027,tomb,Giza,Egypt,Africa
+quang binh province,17.509599,106.4004452,state,,Vietnam,Asia
+queensland,-22.1646782,144.5844903,state,,Australia,Oceania
+queenstown skyline gondola,-45.0284683,168.6561416,aerialway,Queenstown,New Zealand,Oceania
+queretaro state,19.4397996,-99.2766797,road,Naucalpan de Juárez,Mexico,North America
+quinta da regaleira,38.7951123,-9.3962034,attraction,Sintra,Portugal,Europe
+quintana roo,19.6666671,-88.5000001,state,,Mexico,North America
+rabat,34.02236,-6.8340222,city,Rabat,Morocco,Africa
+railay beach,8.0114166,98.8379541,pub,Railay,Thailand,Asia
+red sea,20.2965624,38.5343146,sea,,,
+reichstag dome,52.5185931,13.3761064,viewpoint,Berlin,Germany,Europe
+reichstag,52.5186537,13.3761015,attraction,Berlin,Germany,Europe
+reims,49.2577886,4.031926,city,Reims,France,Europe
+rhineland palatinate,49.9531599,7.310646,state,,Germany,Europe
+rhodes,36.1725297,27.9194016,island,Rhodes,Greece,Europe
+rif,34.8397986,-4.5035276,mountain_range,Bni Bounsar,Morocco,Africa
+rijksmuseum,52.3598431,4.8850395,museum,Amsterdam,Netherlands,Europe
+riviera maya,40.4182456,-86.8343675,restaurant,Lafayette,United States,North America
+rome,41.8933203,12.4829321,city,Rome,Italy,Europe
+rotterdam,51.9244424,4.47775,city,Rotterdam,Netherlands,Europe
+rotterdam zoo,51.9266946,4.4516482,zoo,Rotterdam,Netherlands,Europe
+rottnest island,-32.0070095,115.5205271,island,The Settlement,Australia,Oceania
+royal andalusian school of equestrian art,43.97478,-75.91076,city,Watertown,United States of America,North America
+royal palace of madrid,40.4167403,-3.7136222,museum,Madrid,Spain,Europe
+rudas thermal bath,51.3751,-2.36172,city,Bath,United Kingdom,Europe
+rugen,54.4529015,13.3882344,island,Rügen,Germany,Europe
+ruhr area,51.5175179,7.1439182,region,,Germany,Europe
+rynek underground,50.061996,19.9377745,museum,Krakow,Poland,Europe
+sacred monkey forest sanctuary,-8.5187349,115.2583202,forest,Ubud,Indonesia,Asia
+sagrada familia,41.4035046,2.1744283,attraction,Barcelona,Spain,Europe
+sahara desert morocco,31.0894916,-3.9656853,hotel,Et-taous ⵟⴰⵡⵙ الطاوس,Morocco,Africa
+saint tropez,43.2727191,6.6405225,village,Saint-Tropez,France,Europe
+sainte chapelle,48.8553933,2.3449941,place_of_worship,Paris,France,Europe
+salem witch museum,42.5237448,-70.8911625,museum,Salem,United States,North America
+salou,41.0768193,1.1440411,city,Salou,Spain,Europe
+salzburg,47.7981346,13.0464806,city,Salzburg,Austria,Europe
+salzburg state,47.8029805,13.0428825,theatre,Salzburg,Austria,Europe
+salzkammergut,47.791913,13.5719295,region,,Austria,Europe
+san francisco,37.7792588,-122.4193286,city,San Francisco,United States,North America
+san luis potosi,22.5000001,-100.4949145,state,,Mexico,North America
+san miguel de cozumel,20.5014305,-86.9435851,city,San Miguel de Cozumel,Mexico,North America
+santiago bernabeu stadium,40.4530225,-3.687422,stadium,Madrid,Spain,Europe
+santorini,36.4071112,25.4566637,island,Thira Municipal Unit,Greece,Europe
+sao jorge castle,38.7139407,-9.1331501,attraction,Lisbon,Portugal,Europe
+sao miguel island,37.8085564,-25.4731374,island,São Miguel Island,Portugal,Europe
+sapporo,43.061936,141.3542924,city,Sapporo,Japan,Asia
+sardinia,40.0912813,9.0305773,state,,Italy,Europe
+savannah,32.0790074,-81.0921335,city,Savannah,United States,North America
+saxony,50.9295798,13.4585052,state,,Germany,Europe
+schladming,47.3940415,13.6867878,city,Schladming,Austria,Europe
+schonbrunn palace vienna,48.1849894,16.3115684,attraction,Vienna,Austria,Europe
+schonbrunn zoo,48.1840643,16.3021368,bus_stop,Vienna,Austria,Europe
+schwangau,47.576803,10.7373475,village,Schwangau,Germany,Europe
+scottish highlands,56.8,-5.0,mountain_range,,United Kingdom,Europe
+secret garden marrakech,31.6860236,-7.9588309,garden,Marrakesh,Morocco,Africa
+sedlec ossuary,49.9617761,15.2880921,museum,Kutná Hora,Czechia,Europe
+seine river,49.6828359,-96.7162548,river,,Canada,North America
+semperoper,51.0545398,13.7352265,attraction,Dresden,Germany,Europe
+seville cathedral,37.385915,-5.9931406,heritage,Seville,Spain,Europe
+seville,37.3886303,-5.9953403,city,Seville,Spain,Europe
+sharm el sheikh,27.8644422,34.295447,city,Sharm El Sheikh,Egypt,Asia
+shetland islands,60.333333,-1.333333,state,,United Kingdom,Europe
+shibuya sky,35.6582857,139.7022617,viewpoint,Shibuya,Japan,Asia
+siam park,28.072206,-16.7256725,attraction,Adeje,Spain,Europe
+sian ka an,20.6108984,-87.1016159,road,Playa del Carmen,Mexico,North America
+sicily,37.587794,14.155048,state,,Italy,Europe
+sidemen village,,,,,,
+siena,43.1672059,11.467561,county,,Italy,Europe
+silesian voivodeship,50.5687422,19.2343995,state,,Poland,Europe
+sistine chapel,41.9029338,12.4544042,church,Vatican City,Vatican City,Europe
+sky garden,-20.262136,57.4921546,neighbourhood,Quatre Bornes,Mauritius,Africa
+skydive dubai,24.8884791,55.5462861,aeroway,Grayteesah,United Arab Emirates,Asia
+sopron,47.6803063,16.5983457,city,Sopron,Hungary,Europe
+souss massa,30.187722,-8.6322498,region,,Morocco,Africa
+south bohemian region,49.0864548,14.6001727,county,,Czechia,Europe
+south holland,51.9966792,4.5597397,state,,Netherlands,Europe
+south island,-43.586562,171.2123294,island,South Island,New Zealand,Oceania
+south of france,43.5768598,7.0209473,club,Le Cannet,France,Europe
+south sinai,28.6449564,33.8711313,state,,Egypt,Asia
+southern vietnam,10.7841475,106.6873753,museum,Ho Chi Minh City,Vietnam,Asia
+spain,39.3260685,-4.8379791,country,,Spain,Europe
+spanish riding school,48.2073067,16.3667068,attraction,Vienna,Austria,Europe
+spinalonga,35.2977829,25.738044,islet,Agios Nikolaos Municipal Unit,Greece,Europe
+spotify camp nou,41.3808806,2.1228182,attraction,Barcelona,Spain,Europe
+spree river,-8.3143741,147.9356486,river,,Papua New Guinea,Oceania
+st mary s basilica,50.0616547,19.9394485,place_of_worship,Krakow,Poland,Europe
+st peter s basilica,41.9021569,12.4537105,church,Vatican City,Vatican City,Europe
+st stephen s basilica,47.5007765,19.0539924,place_of_worship,Budapest,Hungary,Europe
+st stephen s cathedral vienna,48.2084923,16.3731269,attraction,Vienna,Austria,Europe
+st vitus cathedral,50.0908638,14.400571,place_of_worship,Capital City of Prague,Czechia,Europe
+staropramen brewery,,,,,,
+statue of liberty,40.6892532,-74.0445482,attraction,New York,United States,North America
+stonehenge,51.1788293,-1.826183,attraction,West Amesbury,United Kingdom,Europe
+strahan,-42.1525389,145.3282194,city,Strahan,Australia,Oceania
+street kart shibuya,,,,,,
+styria,47.2500001,15.1666665,state,,Austria,Europe
+sultan ahmed mosque,41.0053843,28.9768534,attraction,Istanbul,Turkey,Europe
+sumatra,0.1498584,102.8197858,region,,Indonesia,Asia
+summit one vanderbilt,40.7528374,-73.9785218,viewpoint,New York,United States,North America
+swietokrzyskie,50.7504894,20.7829122,state,,Poland,Europe
+swinoujscie,53.9097477,14.2510703,city,Świnoujście,Poland,Europe
+sydney harbour,-33.8560452,151.2428673,flowline,Sydney,Australia,Oceania
+sydney opera house,-33.8571981,151.2151234,arts_centre,Sydney,Australia,Oceania
+sydney vivid,-33.9295255,151.1528163,building,Sydney,Australia,Oceania
+szczecin,53.4301818,14.5509623,city,Szczecin,Poland,Europe
+szechenyi thermal bath,47.5184354,19.0825223,attraction,Budapest,Hungary,Europe
+taito city,35.7126306,139.7797736,townhall,Taito,Japan,Asia
+tam coc,20.2176747,105.9294811,hotel,Hoa Lư,Vietnam,Asia
+tangier s ancient medina,41.13839,-81.86375,city,Medina,United States of America,North America
+taronga zoo,-33.8438319,151.2413746,zoo,Sydney,Australia,Oceania
+tarpon springs,28.1470965,-82.756367,city,Tarpon Springs,United States,North America
+tasmania,-42.035067,146.6366887,state,,Australia,Oceania
+tatra mountains,49.2080593,19.9473919,mountain_range,,Slovakia,Europe
+tegallalang,-8.4503253,115.2807703,village,Tegallalang,Indonesia,Asia
+tekapo lake,-43.8934481,170.5240212,lake,,New Zealand,Oceania
+tenerife,28.217,-16.589,island,Tenerife,Spain,Europe
+teotihuacan,19.693357,-98.8831264,county,,Mexico,North America
+terceira,38.7211653,-27.217638,island,Ilha Terceira,Portugal,Europe
+texel,53.0767854,4.905757,municipality,Texel,Netherlands,Europe
+thailand,14.8971921,100.83273,country,,Thailand,Asia
+thang long water puppet theatre,21.0317043,105.853455,theatre,Hà Nội,Vietnam,Asia
+the camargue,-33.8621378,18.5054028,neighbourhood,Milnerton,South Africa,Africa
+the cotswolds,33.4669738,-86.6759878,neighbourhood,Birmingham,United States,North America
+the land of legends theme park,36.8769726,31.0028314,theme_park,Serik,Turkey,Asia
+the london eye,51.5029722,-0.1188456,shop,London,United Kingdom,Europe
+the palm jumeirah,25.1278046,55.1535151,island,Palm Jumeirah,United Arab Emirates,Asia
+the upside down amsterdam,52.3399222,4.8928792,museum,Amsterdam,Netherlands,Europe
+thessaloniki,40.6403167,22.9352716,city,Thessaloniki,Greece,Europe
+thuringia,50.9014721,11.0377839,state,,Germany,Europe
+tihany,46.9122292,17.8917574,village,Tihany,Hungary,Europe
+tokyo disneyland,35.6324094,139.881001,theme_park,Urayasu,Japan,Asia
+tokyo disneysea,35.6272516,139.8839389,theme_park,Urayasu,Japan,Asia
+tokyo imperial palace,35.6838466,139.7506859,castle,Chiyoda,Japan,Asia
+tokyo,35.6768601,139.7638947,state,,Japan,Asia
+tokyo skytree,35.7100542,139.8107141,attraction,Sumida,Japan,Asia
+tokyo tower,35.6584491,139.745536,attraction,Minato,Japan,Asia
+tongariro alpine crossing,-39.0903262,175.6511544,road,,New Zealand,Oceania
+topkapi palace,41.011344,28.9832034,museum,Istanbul,Turkey,Europe
+toulouse,43.6044622,1.4442469,city,Toulouse,France,Europe
+tours france,47.3900474,0.6889268,city,Tours,France,Europe
+tower of london,51.508217,-0.0761879,attraction,London,United Kingdom,Europe
+tss earnslaw,-45.0337059,168.6576521,ferry_terminal,Queenstown,New Zealand,Oceania
+turkish black sea coast,,,,,,
+turkish riviera,33.5756274,-7.6461268,restaurant,Casablanca,Morocco,Africa
+turkiye,39.294076,35.2316631,country,,Turkey,Asia
+tuscany,43.4586541,11.1389204,state,,Italy,Europe
+tv tower berlin,52.5208279,13.4094214,attraction,Berlin,Germany,Europe
+tyrol,47.223193,11.5261028,state,,Austria,Europe
+ubud,-8.5068977,115.2622931,city,Ubud,Indonesia,Asia
+ubud palace,-8.5069503,115.2627374,bus_stop,Ubud,Indonesia,Asia
+uffizi gallery,39.2234338,-77.2722132,road,Clarksburg,United States,North America
+uluru,-25.3455545,131.0369615,attraction,Macdonnell Region,Australia,Oceania
+uluwatu temple,-8.8293694,115.0843428,attraction,Uluwatu,Indonesia,Asia
+umm al quwain,25.6112488,55.6174631,state,,United Arab Emirates,Asia
+underground naples,40.7349252,13.8586737,gallery,Forio,Italy,Europe
+united arab emirates,24.0002488,53.9994829,country,,United Arab Emirates,Asia
+united kingdom,54.7023545,-3.2765753,country,,United Kingdom,Europe
+united states,39.7837304,-100.445882,country,,United States,North America
+universal orlando resort,28.4407046,-81.4448784,resort,Orlando,United States,North America
+universal studios hollywood,34.1392321,-118.3543834,theme_park,Universal City,United States,North America
+universal studios japan,34.6656393,135.4324527,theme_park,Osaka,Japan,Asia
+upper austria,48.25,14.0,state,,Austria,Europe
+usti nad labem,50.6603327,14.0381357,city,Ústí nad Labem,Czechia,Europe
+utrecht,52.0907006,5.1215634,city,Utrecht,Netherlands,Europe
+utrecht province,6.0244364,80.2195123,archaeological_site,Galle,Sri Lanka,Asia
+vac,47.7782873,19.1278294,city,Vác,Hungary,Europe
+valley of the kings,25.7404898,32.6017581,scree,New Al Qarnh City,Egypt,Africa
+van gogh museum,52.3583673,4.88109,museum,Amsterdam,Netherlands,Europe
+vatican museums,41.904961,12.4546617,museum,Vatican City,Vatican City,Europe
+venice,45.4371908,12.3345898,city,Venice,Italy,Europe
+verona,45.4424977,10.9857377,county,,Italy,Europe
+vialand,41.0713265,28.9235487,theme_park,Eyüpsultan,Turkey,Europe
+vienna,48.2083537,16.3725042,city,Vienna,Austria,Europe
+vienna state opera,48.2032859,16.3691934,attraction,Vienna,Austria,Europe
+vietnam,15.9266657,107.9650855,country,,Vietnam,Asia
+vila nova de gaia,41.1300103,-8.6058415,city,Vila Nova de Gaia,Portugal,Europe
+vistula krakow,50.0646311,20.0005635,shop,Krakow,Poland,Europe
+vltava river,,,,,,
+vorarlberg,47.25,9.9166667,state,,Austria,Europe
+wachau valley,32.81874,-85.17939,city,Valley,United States of America,North America
+wai o tapu thermal wonderland,-38.3558981,176.367513,attraction,Waiotapu,New Zealand,Oceania
+waiheke island,-36.7931083,175.0883863,island,Waiheke,New Zealand,Oceania
+waikato,-37.7792272,175.2010324,state,,New Zealand,Oceania
+waitomo glowworm caves,-38.260869,175.1035429,attraction,Waitomo Caves,New Zealand,Oceania
+warner bros studio london,51.6908787,-0.4183665,attraction,Watford,United Kingdom,Europe
+washington dc,38.8950368,-77.0365427,city,Washington,United States,North America
+wat arun,13.7438976,100.4885137,attraction,Bangkok,Thailand,Asia
+waterbom bali,-8.7282927,115.170627,water_park,Kuta,Indonesia,Asia
+wawel hill,-62.1158069,-58.3794595,peak,,,
+wawel royal castle,42.5499997,-83.0897311,restaurant,Troy,United States,North America
+wellington region,-41.2235474,175.4157576,state,,New Zealand,Oceania
+wembley stadium,51.5560695,-0.2796034,attraction,London,United Kingdom,Europe
+west coast south island,-21.50813,115.3533,state,South Island,Australia,Oceania
+western australia,-25.2303005,121.0187246,state,,Australia,Oceania
+western transdanubia,47.1759579,16.8850579,region,,Hungary,Europe
+westminster abbey,51.499399,-0.127391,attraction,London,United Kingdom,Europe
+white desert,27.2938408,28.1952093,hamlet,White Desert,Egypt,Africa
+whitsunday islands,-20.6132878,148.872683,neighbourhood,Whitsunday Regional,Australia,Oceania
+wieliczka salt mine,49.9830482,20.0557077,mine_shaft,Wieliczka,Poland,Europe
+wiener musikverein concert hall,49.11127,9.73908,city,Schwäbisch Hall,Germany,Europe
+xcaret park,39.11251,-100.35875,city,Park,United States of America,North America
+xplor park,20.5938187,-87.1224711,theme_park,Playa del Carmen,Mexico,North America
+yamanashi prefecture,35.6399328,138.6380495,state,,Japan,Asia
+yona beach club,44.58116,11.50476,city,Club,Italy,Europe
+york,53.9656578,-1.0743052,county,,United Kingdom,Europe
+yucatan,20.6845957,-88.8755669,state,,Mexico,North America
+yves saint laurent museum,31.641866,-8.0028013,museum,Marrakesh,Morocco,Africa
+zaanse schans,52.4750534,4.8179761,theme_park,Zaandam,Netherlands,Europe
+zakopane,49.2969114,19.9504753,city,Zakopane,Poland,Europe
+zakynthos,37.7891384,20.7900896,island,Zakynthos,Greece,Europe
+zeeland,51.4162975,3.7028061,state,,Netherlands,Europe
+zell am see,47.3239636,12.7963165,city,Zell am See,Austria,Europe
+zoomarine algarve,37.1249791,-8.3154346,theme_park,Albufeira,Portugal,Europe
