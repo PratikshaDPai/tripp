@@ -14,7 +14,7 @@ router.use(authMiddleware);
 
 // GET all trips
 router.get("/", async (req, res) => {
-  const trips = await Trip.find();
+  const trips = await Trip.find({ users: req.session.user });
   res.render("trips/index", { trips });
 });
 
