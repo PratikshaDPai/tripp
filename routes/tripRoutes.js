@@ -51,4 +51,32 @@ router.post("/", async (req, res) => {
   res.redirect("/trips");
 });
 
+router.get("/:tripId/:dayId/edit", async (req, res) => {
+  const foundTrip = await Trip.findById(req.params.tripId);
+  const foundDay = foundTrip.days.id(req.params.dayId);
+  res.render("days/edit.ejs", { day: foundDay, trip: foundTrip });
+});
+
+router.get("/:tripId/:dayId", async (req, res) => {
+  const foundTrip = await Trip.findById(req.params.tripId);
+  const foundDay = foundTrip.days.id(req.params.dayId);
+  res.render("days/show.ejs", { day: foundDay, trip: foundTrip });
+});
+
+router.put("/:tripId/:dayId", async (req, res) => {
+  const foundTrip = await Trip.findById(req.params.tripId);
+  const foundDay = foundTrip.days.id(req.params.dayId);
+  foundDay.set(req.body);
+  await foundTrip.save();
+  res.redirect(`/trips/${req.params.tripId}/${req.params.dayId}`);
+});
+
+router.delete("/:tripId/:dayId", async (req, res) => {
+  const foundTrip = await Trip.findById(req.params.tripId);
+  const foundDay = foundTrip.days.id(req.params.dayId);
+  foundTrip.days.remove(foundDay);
+  await foundTrip.save();
+  res.redirect(`/trips/${req.params.tripId}`);
+});
+
 module.exports = router;
