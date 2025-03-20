@@ -25,9 +25,7 @@ router.get("/new", (req, res) => {
 
 router.param("tripId", async (req, res, next) => {
   const userId = req.session.user;
-  console.log("userId", userId);
   const tripId = req.params.tripId;
-  console.log("tripId", tripId);
   const tripExists = await Trip.exists({ _id: tripId, users: userId });
   if (tripExists) {
     next();
