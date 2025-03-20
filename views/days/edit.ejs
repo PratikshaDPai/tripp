@@ -11,7 +11,7 @@
       <h1>Edit Day: <%= day.name %></h1>
 
       <form
-        action="/trips/<%=trip._id%>/<%= day._id %>?_method=PUT"
+        action="/trips/<%=trip._id%>/days/<%= day._id %>?_method=PUT"
         method="POST"
         class="edit-form"
       >
@@ -35,7 +35,7 @@
         <button type="submit" class="save-button">Save Changes</button>
       </form>
 
-      <a href="/trips/<%=trip._id%>" class="back-link">← Back to Days</a>
+      <a href="/trips/<%=trip._id%>/days" class="back-link">← Back to Days</a>
     </div>
   </body>
 </html>

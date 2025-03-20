@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const Trip = require("../models/trip");
+const { Day } = require("../models/day");
 
 // Middleware for authentication
 const authMiddleware = (req, res, next) => {
@@ -65,24 +66,24 @@ router.post("/", async (req, res) => {
   res.redirect("/trips");
 });
 
-router.get("/:tripId/new", async (req, res) => {
+router.get("/:tripId/days/new", async (req, res) => {
   const foundTrip = await Trip.findById(req.params.tripId);
   res.render("days/new.ejs", { trip: foundTrip });
 });
 
-router.get("/:tripId/:dayId/edit", async (req, res) => {
+router.get("/:tripId/days/:dayId/edit", async (req, res) => {
   const foundTrip = await Trip.findById(req.params.tripId);
   const foundDay = foundTrip.days.id(req.params.dayId);
   res.render("days/edit.ejs", { day: foundDay, trip: foundTrip });
 });
 
-router.get("/:tripId/:dayId", async (req, res) => {
+router.get("/:tripId/days/:dayId", async (req, res) => {
   const foundTrip = await Trip.findById(req.params.tripId);
   const foundDay = foundTrip.days.id(req.params.dayId);
   res.render("days/show.ejs", { day: foundDay, trip: foundTrip });
 });
 
-router.put("/:tripId/:dayId", async (req, res) => {
+router.put("/:tripId/days/:dayId", async (req, res) => {
   const foundTrip = await Trip.findById(req.params.tripId);
   const foundDay = foundTrip.days.id(req.params.dayId);
   foundDay.set(req.body);
@@ -90,7 +91,7 @@ router.put("/:tripId/:dayId", async (req, res) => {
   res.redirect(`/trips/${req.params.tripId}/${req.params.dayId}`);
 });
 
-router.delete("/:tripId/:dayId", async (req, res) => {
+router.delete("/:tripId/days/:dayId", async (req, res) => {
   const foundTrip = await Trip.findById(req.params.tripId);
   const foundDay = foundTrip.days.id(req.params.dayId);
   foundTrip.days.remove(foundDay);
@@ -98,7 +99,7 @@ router.delete("/:tripId/:dayId", async (req, res) => {
   res.redirect(`/trips/${req.params.tripId}`);
 });
 
-router.post("/:tripId", async (req, res) => {
+router.post("/:tripId/days", async (req, res) => {
   const day = await Day.create(req.body);
   const trip = await Trip.findById(req.params.tripId);
   trip.days.push(day);

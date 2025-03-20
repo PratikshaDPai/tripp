@@ -26,7 +26,7 @@
       <ul class="trip-list">
         <% days.forEach(day => { %>
         <li class="trip-card">
-          <a href="/trips/<%= trip._id %>/<%= day._id %>">
+          <a href="/trips/<%= trip._id %>/days/<%= day._id %>">
             <img
               src="<%= day.image %>"
               alt="<%= day.name %>"
@@ -41,7 +41,9 @@
       </ul>
       <nav>
         <a href="/trips" class="back-link">← Go Back</a>
-        <a href="/trips/<%= trip._id %>/new" class="nav-link">Add New Day</a>
+        <a href="/trips/<%= trip._id %>/days/new" class="nav-link"
+          >Add New Day</a
+        >
       </nav>
     </div>
   </body>

@@ -10,7 +10,11 @@
     <div class="container">
       <h1>Add day</h1>
 
-      <form action="/trips/<%=trip._id %>/" method="POST" class="create-form">
+      <form
+        action="/trips/<%=trip._id %>/days"
+        method="POST"
+        class="create-form"
+      >
         <label for="name">Name:</label>
         <input type="text" name="name" id="name" required />
 
@@ -28,7 +32,7 @@
         <button type="submit" class="add-button">Add Day</button>
       </form>
 
-      <a href="/trips/<%=trip._id %>/" class="back-link">← Back to Days</a>
+      <a href="/trips/<%=trip._id %>/days" class="back-link">← Back to Days</a>
     </div>
   </body>
 </html>
