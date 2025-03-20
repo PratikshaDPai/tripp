@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in or Sign up - Tripp</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="auth-container">
+      <h1>Log in or Sign up</h1>
+      <div class="toggle-auth">
+        <button id="show-login" class="active">Log In</button>
+        <button id="show-signup">Sign Up</button>
+      </div>
+
+      <!-- Login Form -->
+      <form id="login-form" action="/auth/sign-in" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required />
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required />
+        <button type="submit" class="btn btn-primary">Log In</button>
+      </form>
+
+      <!-- Signup Form (Initially Hidden) -->
+      <form
+        id="signup-form"
+        action="/auth/sign-up"
+        method="POST"
+        style="display: none"
+      >
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" required />
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" required />
+        <label for="confirmPassword">Confirm Password:</label>
+        <input
+          type="password"
+          name="confirmPassword"
+          id="confirmPassword"
+          required
+        />
+        <button type="submit" class="btn btn-secondary">Sign Up</button>
+      </form>
+    </div>
+
+    <script>
+      document
+        .getElementById("show-login")
+        .addEventListener("click", function () {
+          document.getElementById("login-form").style.display = "block";
+          document.getElementById("signup-form").style.display = "none";
+          this.classList.add("active");
+          document.getElementById("show-signup").classList.remove("active");
+        });
+
+      document
+        .getElementById("show-signup")
+        .addEventListener("click", function () {
+          document.getElementById("signup-form").style.display = "block";
+          document.getElementById("login-form").style.display = "none";
+          this.classList.add("active");
+          document.getElementById("show-login").classList.remove("active");
+        });
+    </script>
+  </body>
+</html>

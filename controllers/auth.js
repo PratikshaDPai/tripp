@@ -2,8 +2,10 @@ const express = require("express");
 const router = express.Router();
 const User = require("../models/user");
 const bcrypt = require("bcrypt");
-// NOTE: there are no routes here yet
 
+router.get("/", (req, res) => {
+  res.render("auth/auth");
+});
 router.get("/sign-up", (req, res) => {
   res.render("auth/sign-up.ejs");
 });
@@ -11,23 +13,48 @@ router.get("/sign-up", (req, res) => {
 // however, it only has router functionality
 
 router.post("/sign-up", async (req, res) => {
-  // check if the user exists - NO DUPLICATE USERNAMES
-  const userInDatabase = await User.findOne({ username: req.body.username });
-  if (userInDatabase) {
-    return res.send("Username already taken");
+  try {
+    console.log("Received sign-up data:", req.body); // Debugging
+
+    const { username, password, confirmPassword } = req.body;
+
+    // Check if username is taken
+    const userExists = await User.findOne({ username });
+    if (userExists) {
+      return res.send("Username already taken");
+    }
+
+    // Check if passwords match
+    if (password !== confirmPassword) {
+      return res.send("Password and Confirm password do not match!");
+    }
+
+    // Hash the password asynchronously
+    const hashedPassword = await bcrypt.hash(password, 10);
+
+    // Create user in the database
+    const newUser = await User.create({
+      username,
+      password: hashedPassword,
+      role: "regular-user", // Default role
+    });
+
+    console.log("User created successfully:", newUser);
+
+    // Authenticate the user immediately after sign-up (same as sign-in)
+    req.session.user = {
+      username: newUser.username,
+      _id: newUser._id,
+    };
+
+    console.log("User signed in automatically:", req.session);
+
+    // Redirect to homepage (or dashboard) after successful signup
+    res.redirect("/");
+  } catch (error) {
+    console.error("Signup error:", error);
+    res.send("Error during signup. Please try again.");
   }
-
-  // check if the password and confirm password are a match
-  if (req.body.password !== req.body.confirmPassword) {
-    return res.send("Password and Confirm password do not match!");
-  }
-
-  // create encrypted version of plain-text password (hashed and salted)
-  const hashedPassword = bcrypt.hashSync(req.body.password, 10);
-  req.body.password = hashedPassword;
-
-  const user = await User.create(req.body);
-  res.send(`Thanks for signing up ${user.username}`);
 });
 
 // GET /sign-in: send a page that has a login form
