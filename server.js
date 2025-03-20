@@ -5,6 +5,7 @@ const methodOverride = require("method-override");
 const morgan = require("morgan");
 const path = require("path");
 const session = require("express-session");
+const Location = require("./models/location");
 
 const app = express();
 const port = process.env.PORT || 8000;
@@ -76,6 +77,64 @@ app.get("/", (req, res) => {
 
 app.use(isSignedIn);
 app.use(passUserToView);
+
+app.get("/search-location", async (req, res) => {
+  const query = req.query.q;
+
+  try {
+    const results = await Location.aggregate([
+      {
+        $match: {
+          $or: [
+            { name: { $regex: query, $options: "i" } },
+            { city: { $regex: query, $options: "i" } },
+            { country: { $regex: query, $options: "i" } },
+            { continent: { $regex: query, $options: "i" } },
+          ],
+        },
+      },
+      {
+        $addFields: {
+          score: {
+            $cond: {
+              if: {
+                $regexMatch: { input: "$name", regex: query, options: "i" },
+              },
+              then: 4, // Highest weight for name
+              else: {
+                $cond: {
+                  if: {
+                    $regexMatch: { input: "$city", regex: query, options: "i" },
+                  },
+                  then: 3,
+                  else: {
+                    $cond: {
+                      if: {
+                        $regexMatch: {
+                          input: "$country",
+                          regex: query,
+                          options: "i",
+                        },
+                      },
+                      then: 2,
+                      else: 1, // Lowest weight for continent
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+      { $sort: { score: -1 } }, // Sort by relevance score
+      { $limit: 10 }, // Get top 10 matches
+    ]);
+    res.json(results);
+  } catch (error) {
+    console.error("Error in location search:", error);
+    res.status(500).json({ error: "Internal Server Error" });
+  }
+});
 
 // Start the server
 app.listen(port, () => {
