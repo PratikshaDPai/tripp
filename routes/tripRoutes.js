@@ -67,8 +67,7 @@ router.post("/:tripId/share", async (req, res) => {
 
   await Trip.findByIdAndUpdate(
     tripId,
-    { $addToSet: { users: { $each: userIds } } }, // avoid duplicates
-    { new: true }
+    { $addToSet: { users: { $each: userIds } } } // avoid duplicates
   );
 
   res.redirect(`/trips/${tripId}`);
