@@ -4,7 +4,7 @@ const daySchema = new mongoose.Schema({
   name: { type: String, required: true },
   location: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: "Location", // Reference to the Location model
+    ref: "Location",
     required: true,
   },
   description: { type: String, required: true },

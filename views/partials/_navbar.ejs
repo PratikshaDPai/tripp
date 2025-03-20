@@ -13,7 +13,7 @@
             <% if (trip.days && trip.days.length > 0) { %> <%
             trip.days.forEach(day => { %>
             <li>
-              <a href="/trips/<%= trip._id %>/<%= day._id %>"
+              <a href="/trips/<%= trip._id %>/days/<%= day._id %>"
                 ><%= day.name %></a
               >
             </li>
