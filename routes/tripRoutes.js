@@ -10,8 +10,10 @@ const authMiddleware = (req, res, next) => {
   next();
 };
 
+router.use(authMiddleware);
+
 // GET all trips
-router.get("/", authMiddleware, async (req, res) => {
+router.get("/", async (req, res) => {
   const trips = await Trip.find();
   res.render("trips/index", { trips });
 });
