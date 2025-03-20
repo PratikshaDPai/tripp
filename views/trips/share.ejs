@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Share Trip</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <%- include('../partials/_navbar.ejs') %>
+
+    <h1>Share Trip: <%= trip.name %></h1>
+
+    <form action="/trips/<%= trip._id %>/share" method="POST">
+      <label for="users">Select Users to Share With:</label>
+      <select name="users" id="users" multiple required>
+        <% usersNotInTrip.forEach(user => { %>
+        <option value="<%= user._id %>"><%= user.username %></option>
+        <% }) %>
+      </select>
+
+      <button type="submit">Share Trip</button>
+    </form>
+
+    <a href="/trips/<%= trip._id %>">Cancel</a>
+  </body>
+</html>
