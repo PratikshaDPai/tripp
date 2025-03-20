@@ -65,7 +65,7 @@ router.post("/:tripId/share", async (req, res) => {
 
   const userIds = Array.isArray(users) ? users : [users];
 
-  const trip = await Trip.findByIdAndUpdate(
+  await Trip.findByIdAndUpdate(
     tripId,
     { $addToSet: { users: { $each: userIds } } }, // avoid duplicates
     { new: true }
