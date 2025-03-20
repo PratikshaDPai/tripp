@@ -114,7 +114,7 @@ router.put("/:tripId/days/:dayId", async (req, res) => {
   const foundDay = foundTrip.days.id(req.params.dayId);
   foundDay.set(req.body);
   await foundTrip.save();
-  res.redirect(`/trips/${req.params.tripId}/${req.params.dayId}`);
+  res.redirect(`/trips/${req.params.tripId}/days/${req.params.dayId}`);
 });
 
 router.delete("/:tripId/days/:dayId", async (req, res) => {
