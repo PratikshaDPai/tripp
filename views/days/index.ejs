@@ -11,19 +11,10 @@
     <div class="container">
       <div class="button-group">
         <form action="/trips/<%=trip._id%>?_method=DELETE" method="POST">
-          <button type="submit" class="delete-button">
-            Delete <%= trip.name %>
-          </button>
+          <button type="submit" class="delete-button">Delete Trip</button>
         </form>
         <form action="/trips/<%=trip._id%>/edit" method="GET">
-          <button type="submit" class="edit-button">
-            Edit <%= trip.name %>
-          </button>
-        </form>
-        <form action="/trips/<%=trip._id%>/share" method="GET">
-          <button type="submit" class="edit-button">
-            Share <%= trip.name %>
-          </button>
+          <button type="submit" class="edit-button">Edit Trip</button>
         </form>
       </div>
       <h1>All Days</h1>
@@ -49,6 +40,9 @@
         <a href="/trips/<%= trip._id %>/days/new" class="nav-link"
           >Add New Day</a
         >
+        <form action="/trips/<%=trip._id%>/share" method="GET">
+          <button type="submit" class="share-button">Share Trip</button>
+        </form>
       </nav>
     </div>
   </body>

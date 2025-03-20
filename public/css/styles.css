@@ -130,7 +130,8 @@ img {
 
 /* Buttons */
 .delete-button,
-.edit-button {
+.edit-button,
+.share-button {
   border: none;
   padding: 12px 20px;
   font-size: 1rem;
@@ -159,6 +160,17 @@ img {
 
 .edit-button:hover {
   background-color: #c2c96e;
+  transform: scale(1.05);
+}
+
+/* Share Button */
+.share-button {
+  background-color: rgb(178, 186, 247);
+  color: rgb(61, 75, 175);
+}
+
+.share-button:hover {
+  background-color: rgb(150, 161, 244);
   transform: scale(1.05);
 }
 

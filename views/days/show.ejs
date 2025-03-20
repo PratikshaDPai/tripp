@@ -28,17 +28,13 @@
           action="/trips/<%=trip._id %>/days/<%=day._id%>?_method=DELETE"
           method="POST"
         >
-          <button type="submit" class="delete-button">
-            Delete <%= day.name %>
-          </button>
+          <button type="submit" class="delete-button">Delete</button>
         </form>
         <form
           action="/trips/<%=trip._id %>/days/<%=day._id%>/edit"
           method="GET"
         >
-          <button type="submit" class="edit-button">
-            Edit <%= day.name %>
-          </button>
+          <button type="submit" class="edit-button">Edit</button>
         </form>
       </div>
 
@@ -46,7 +42,7 @@
     </div>
     <iframe
       width="600"
-      height="450"
+      height="600"
       style="border: 0"
       loading="lazy"
       allowfullscreen
