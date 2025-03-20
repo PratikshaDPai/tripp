@@ -104,9 +104,15 @@ router.get("/:tripId/days/:dayId/edit", async (req, res) => {
 });
 
 router.get("/:tripId/days/:dayId", async (req, res) => {
-  const foundTrip = await Trip.findById(req.params.tripId);
+  const foundTrip = await Trip.findById(req.params.tripId).populate(
+    "days.location"
+  );
   const foundDay = foundTrip.days.id(req.params.dayId);
-  res.render("days/show.ejs", { day: foundDay, trip: foundTrip });
+  res.render("days/show.ejs", {
+    day: foundDay,
+    trip: foundTrip,
+    location: foundDay.location,
+  });
 });
 
 router.put("/:tripId/days/:dayId", async (req, res) => {
