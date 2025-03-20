@@ -4,10 +4,12 @@ const Trip = require("../models/trip");
 const { Day } = require("../models/day");
 
 // Middleware for authentication
-const authMiddleware = (req, res, next) => {
+const authMiddleware = async (req, res, next) => {
   if (!req.session.user) {
     return res.redirect("/auth");
   }
+
+  res.locals.trips = await Trip.find({ users: req.session.user });
   next();
 };
 
@@ -15,8 +17,7 @@ router.use(authMiddleware);
 
 // GET all trips
 router.get("/", async (req, res) => {
-  const trips = await Trip.find({ users: req.session.user });
-  res.render("trips/index", { trips });
+  res.render("trips/index");
 });
 
 // GET new trip form
