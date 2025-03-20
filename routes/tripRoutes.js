@@ -133,6 +133,12 @@ router.delete("/:tripId/days/:dayId", async (req, res) => {
 
 router.post("/:tripId/days", async (req, res) => {
   const day = await Day.create(req.body);
+  await day.populate("activities");
+  const activityTitles = day.activities.map(
+    (activity) => activity.title || ["no title"]
+  );
+  day.description = activityTitles.join(", ").trim();
+  await day.save();
   const trip = await Trip.findById(req.params.tripId);
   trip.days.push(day);
   await trip.save();

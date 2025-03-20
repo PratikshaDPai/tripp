@@ -7,6 +7,13 @@ const daySchema = new mongoose.Schema({
     ref: "Location",
     required: true,
   },
+  activities: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Activity",
+      required: true,
+    },
+  ],
   description: { type: String, required: true },
   image: String,
 });
