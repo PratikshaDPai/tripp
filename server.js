@@ -67,7 +67,6 @@ app.get("/unauthorized", (req, res) => {
 
 const isSignedIn = require("./middleware/isSignedin.js");
 const passUserToView = require("./middleware/passUserToView.js");
-const { resourceLimits } = require("worker_threads");
 
 app.get("/", (req, res) => {
   res.render("index.ejs", {
@@ -91,6 +90,14 @@ app.get("/search-location", async (req, res) => {
             { country: { $regex: query, $options: "i" } },
             { continent: { $regex: query, $options: "i" } },
           ],
+        },
+      },
+      {
+        $lookup: {
+          from: "activities", // The collection to join
+          localField: "_id", // The field in the Location collection
+          foreignField: "location", // The field in the Activity collection
+          as: "activities", // The new field in the output
         },
       },
       {
