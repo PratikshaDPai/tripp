@@ -23,6 +23,19 @@ router.get("/new", (req, res) => {
   res.render("trips/new");
 });
 
+router.param("tripId", async (req, res, next) => {
+  const userId = req.session.user;
+  console.log("userId", userId);
+  const tripId = req.params.tripId;
+  console.log("tripId", tripId);
+  const tripExists = await Trip.exists({ _id: tripId, users: userId });
+  if (tripExists) {
+    next();
+  } else {
+    res.status(401).send("Unauthorized");
+  }
+});
+
 // GET edit trip form
 router.get("/:tripId/edit", async (req, res) => {
   const trip = await Trip.findById(req.params.tripId);
