@@ -87,4 +87,12 @@ router.delete("/:tripId/:dayId", async (req, res) => {
   res.redirect(`/trips/${req.params.tripId}`);
 });
 
+router.post("/:tripId", async (req, res) => {
+  const day = await Day.create(req.body);
+  const trip = await Trip.findById(req.params.tripId);
+  trip.days.push(day);
+  await trip.save();
+  res.redirect(`/trips/${req.params.tripId}`);
+});
+
 module.exports = router;
