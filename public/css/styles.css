@@ -267,3 +267,42 @@ textarea {
   padding: 10px;
   border-radius: 20%;
 }
+
+/* Sidebar Navigation */
+.sidenav {
+  width: 250px;
+  height: 100vh;
+  background: #c7ddf1; /* Same as .trip-card */
+  color: #6c8088;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: relative;
+}
+/* Navigation Links */
+
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  margin-bottom: 5px;
+}
+nav ul li a {
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+  color: #6c8088;
+  border-radius: 5px;
+}
+
+nav ul li .open {
+  text-decoration: underline;
+}
+nav ul li ul {
+  padding-left: 15px;
+}
+
+.days-list {
+  background-color: #a7cdf6;
+  color: #224e5f;
+}

@@ -94,7 +94,9 @@ router.post("/", async (req, res) => {
 
 router.get("/:tripId/days/new", async (req, res) => {
   const foundTrip = await Trip.findById(req.params.tripId);
-  res.render("days/new.ejs", { trip: foundTrip });
+  res.render("days/new.ejs", {
+    trip: foundTrip,
+  });
 });
 
 router.get("/:tripId/days/:dayId/edit", async (req, res) => {
@@ -112,6 +114,7 @@ router.get("/:tripId/days/:dayId", async (req, res) => {
     day: foundDay,
     trip: foundTrip,
     location: foundDay.location,
+    apikey: process.env.GOOGLE_MAPS_API_KEY,
   });
 });
 

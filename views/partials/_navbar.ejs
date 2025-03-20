@@ -1,19 +1,24 @@
-<nav>
+<nav class="sidenav">
   <ul>
     <li><a href="/">Home</a></li>
     <li><a href="/search">Search</a></li>
 
     <li>
       <a href="/trips">Trips</a>
-      <ul>
+      <ul class="trips-list">
         <% if (trips && trips.length > 0) { %> <% trips.forEach(trip => { %>
         <li>
-          <a href="/trips/<%= trip._id %>"><%= trip.name %></a>
+          <a href="/trips/<%= trip._id %>" class="trip-nav-name"
+            ><%= trip.name %></a
+          >
           <ul>
             <% if (trip.days && trip.days.length > 0) { %> <%
             trip.days.forEach(day => { %>
             <li>
-              <a href="/trips/<%= trip._id %>/days/<%= day._id %>"
+              <a
+                href="/trips/<%= trip._id %>/days/<%= day._id %>"
+                class="days-list"
+                style="display: none"
                 ><%= day.name %></a
               >
             </li>
@@ -38,3 +43,11 @@
     <% } %>
   </ul>
 </nav>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const tripsList = document.querySelector(".trip-nav-name");
+    const days = document.querySelectorAll;
+    tripsList.addEventListener("click", function (event) {});
+  });
+</script>
