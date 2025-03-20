@@ -20,6 +20,11 @@
             Edit <%= trip.name %>
           </button>
         </form>
+        <form action="/trips/<%=trip._id%>/share" method="GET">
+          <button type="submit" class="edit-button">
+            Share <%= trip.name %>
+          </button>
+        </form>
       </div>
       <h1>All Days</h1>
 

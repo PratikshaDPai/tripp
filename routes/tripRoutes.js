@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 const Trip = require("../models/trip");
 const { Day } = require("../models/day");
+const User = require("../models/user");
 
 // Middleware for authentication
 const authMiddleware = async (req, res, next) => {
@@ -46,6 +47,31 @@ router.get("/:tripId/edit", async (req, res) => {
 router.get("/:tripId", async (req, res) => {
   const trip = await Trip.findById(req.params.tripId);
   res.render("days/index", { trip, days: trip.days });
+});
+
+router.get("/:tripId/share", async (req, res) => {
+  const trip = await Trip.findById(req.params.tripId);
+  const usersNotInTrip = await User.find({ _id: { $nin: trip.users } });
+  res.render("trips/share", { usersNotInTrip, trip });
+});
+
+router.post("/:tripId/share", async (req, res) => {
+  const { tripId } = req.params;
+  const { users } = req.body;
+
+  if (!users || users.length === 0) {
+    return res.status(400).send("No users selected.");
+  }
+
+  const userIds = Array.isArray(users) ? users : [users];
+
+  const trip = await Trip.findByIdAndUpdate(
+    tripId,
+    { $addToSet: { users: { $each: userIds } } }, // avoid duplicates
+    { new: true }
+  );
+
+  res.redirect(`/trips/${tripId}`);
 });
 
 // PUT update a trip
