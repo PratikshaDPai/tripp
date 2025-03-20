@@ -49,7 +49,8 @@ router.delete("/:tripId", async (req, res) => {
 
 // POST create a new trip
 router.post("/", async (req, res) => {
-  await Trip.create(req.body);
+  const userId = req.session.user;
+  await Trip.create({ users: [userId], ...req.body });
   res.redirect("/trips");
 });
 
