@@ -54,6 +54,11 @@ router.post("/", async (req, res) => {
   res.redirect("/trips");
 });
 
+router.get("/:tripId/new", async (req, res) => {
+  const foundTrip = await Trip.findById(req.params.tripId);
+  res.render("days/new.ejs", { trip: foundTrip });
+});
+
 router.get("/:tripId/:dayId/edit", async (req, res) => {
   const foundTrip = await Trip.findById(req.params.tripId);
   const foundDay = foundTrip.days.id(req.params.dayId);
