@@ -12,7 +12,7 @@
     <%- include('../partials/_navbar.ejs') %>
     <div class="container">
       <h1 class="trip-title"><%= day.name %></h1>
-
+      <h2><%=day.date%></h2>
       <img
         src="<%= day.image %>"
         alt="<%= day.name %>"
@@ -22,6 +22,7 @@
       />
 
       <p class="trip-description"><%= day.description %></p>
+      <p class="notes"><%= day.notes? day.notes : "" %></p>
 
       <div class="button-group">
         <form

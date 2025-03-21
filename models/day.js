@@ -7,6 +7,10 @@ const daySchema = new mongoose.Schema({
     ref: "Location",
     required: true,
   },
+  date: {
+    type: String,
+    required: true,
+  },
   activities: [
     {
       type: mongoose.Schema.Types.ObjectId,
@@ -16,6 +20,7 @@ const daySchema = new mongoose.Schema({
   ],
   description: { type: String, required: true },
   image: String,
+  notes: String,
 });
 
 const Day = mongoose.model("Day", daySchema);
