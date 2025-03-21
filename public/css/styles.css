@@ -5,7 +5,7 @@ body {
   color: #6c8088;
   font-family: "Arial", sans-serif;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
@@ -19,7 +19,7 @@ body {
 h1 {
   color: #6c7d88;
   font-size: 2rem;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .subtitle {
@@ -30,7 +30,7 @@ h1 {
 
 .container {
   text-align: center;
-  background-color: #d7dfe4;
+  background-color: rgb(216, 223, 231);
   padding: 2rem;
   border-radius: 12px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
@@ -277,7 +277,6 @@ textarea {
   color: #6c8088;
   display: flex;
   flex-direction: column;
-  align-self: flex-start;
   padding: 20px;
   position: relative;
   border-radius: 15px;
@@ -310,11 +309,31 @@ nav ul li a {
   background-color: #88c9db;
   border-radius: 5px;
 }
-.days-list-item {
+.days-list-item,
+.search-result-day {
   display: block;
-
+  text-decoration: none;
   color: #224e5f;
   box-sizing: border-box;
+}
+
+.search-results {
+  display: flex;
+  max-width: 800px;
+  min-width: 300px;
+}
+.search-result-list-item {
+  text-decoration: none;
+  user-select: none;
+  display: block;
+  padding: 10px;
+  margin: 5px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #d0e8ef;
+}
+.search-result-list-item:hover {
+  background-color: rgb(112, 207, 209);
 }
 
 .days-list-item:hover {
@@ -322,4 +341,8 @@ nav ul li a {
 }
 nav ul li a:hover {
   background-color: rgb(112, 207, 209);
+}
+
+.search-results {
+  padding: 10px;
 }

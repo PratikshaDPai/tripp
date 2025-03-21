@@ -3,27 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/styles.css" />
     <title>Search Results</title>
   </head>
-  <body>
+  <body class="vertical">
     <h1>Search Results</h1>
     <form action="/search/results" method="get">
-      <input type="text" name="q" placeholder="Search for days" required />
-      <button type="submit">Search</button>
+      <nav>
+        <input
+          type="text"
+          name="q"
+          placeholder="Search days/activities"
+          required
+        />
+        <button type="submit" class="share-button">Search</button>
+      </nav>
     </form>
 
     <% if (results.length > 0) { %>
-    <h2>Found <%= results.length %> Results</h2>
-    <ul>
+    <h2>Found <%= results.length %> Result(s)</h2>
+    <ul class="search-results">
       <% results.forEach(result => { %>
-      <li>
-        <strong><%= result.day.name %></strong><br />
-        <em>Trip: <%= result.trip.name %></em><br />
-        <p><%= result.day.description %></p>
-        <a href="/trips/<%= result.trip._id %>/<%= result.day._id %>"
-          >View Day Details</a
-        >
-      </li>
+      <a
+        href="/trips/<%= result.trip._id %>/days/<%= result.day._id %> "
+        class="search-result-list-item"
+      >
+        <li class="search-result-day">
+          <strong><%= result.day.name %></strong>
+          <br />
+          <p></p>
+          <em>Trip: <%= result.trip.name %></em><br />
+          <p><%= result.day.description %></p>
+        </li></a
+      >
       <% }) %>
     </ul>
     <% } else { %>
