@@ -16,8 +16,8 @@
 
       <!-- Login Form -->
       <form id="login-form" action="/auth/sign-in" method="POST">
-        <% if (typeof loginError !== "undefined") { %>
-        <div class="error-message"><%= loginError.message %></div>
+        <% if (typeof authError !== "undefined") { %>
+        <div class="error-message"><%= authError.message %></div>
         <% } %>
 
         <label for="username">Username:</label>

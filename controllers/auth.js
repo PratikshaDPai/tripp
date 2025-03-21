@@ -19,14 +19,14 @@ router.post("/sign-up", async (req, res) => {
     const userExists = await User.findOne({ username });
     if (userExists) {
       return res.render("auth/auth", {
-        loginError: { message: "Username already taken" },
+        authError: { message: "Username already taken" },
       });
     }
 
     // Check if passwords match
     if (password !== confirmPassword) {
       return res.render("auth/auth", {
-        loginError: { message: "Password and Confirm password do not match!" },
+        authError: { message: "Password and Confirm password do not match!" },
       });
     }
 
@@ -67,7 +67,7 @@ router.post("/sign-in", async (req, res) => {
 
   if (!userInDatabase) {
     return res.render("auth/auth", {
-      loginError: {
+      authError: {
         message: "Invalid username or password",
         field: "username", // or 'password', or both
       },
@@ -81,7 +81,7 @@ router.post("/sign-in", async (req, res) => {
 
   if (!validPassword) {
     return res.render("auth/auth", {
-      loginError: {
+      authError: {
         message: "Invalid username or password",
         field: "username", // or 'password', or both
       },
