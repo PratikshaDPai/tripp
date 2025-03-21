@@ -6,9 +6,6 @@ const bcrypt = require("bcrypt");
 router.get("/", (req, res) => {
   res.render("auth/auth");
 });
-router.get("/sign-up", (req, res) => {
-  res.render("auth/sign-up.ejs");
-});
 // the router object is similar to the app object in server js
 // however, it only has router functionality
 
@@ -55,11 +52,6 @@ router.post("/sign-up", async (req, res) => {
     console.error("Signup error:", error);
     res.send("Error during signup. Please try again.");
   }
-});
-
-// GET /sign-in: send a page that has a login form
-router.get("/sign-in", (req, res) => {
-  res.render("auth/sign-in.ejs");
 });
 
 // POST /sign-in - route that will be used when login form
