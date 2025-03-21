@@ -279,6 +279,7 @@ textarea {
   flex-direction: column;
   padding: 20px;
   position: relative;
+
   border-radius: 15px;
 }
 /* Navigation Links */
@@ -397,15 +398,58 @@ select:focus {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 iframe {
-  height: 90%;
+  display: block;
+  height: 95vh;
+  max-height: 100vh;
   width: auto;
 }
-@media (max-width: 400px) {
+
+/* Hamburger Menu Button */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  padding: 10px;
+}
+
+.hamburger svg {
+  width: 32px;
+  height: 32px;
+  fill: #6c8088;
+  transition: fill 0.3s ease, transform 0.3s ease;
+}
+
+.hamburger:hover svg {
+  fill: #224e5f;
+  transform: scale(1.1);
+}
+
+@media (max-width: 500px) {
   body {
     flex-direction: column;
   }
   .container {
     max-width: 90%;
+  }
+
+  /* Trying to replace sidenav with hamburger */
+
+  .hamburger {
+    display: block;
+  }
+  .sidenav {
+    position: fixed;
+    left: 0px;
+    transform: translateX(-100%);
+  }
+
+  .sidenav.open {
+    transform: translateX(0);
   }
 
   iframe {

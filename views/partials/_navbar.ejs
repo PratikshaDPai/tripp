@@ -1,3 +1,11 @@
+<button class="hamburger" onclick="toggleSidebar()">
+  <svg viewBox="0 0 100 80" width="40" height="40">
+    <rect width="100" height="15"></rect>
+    <rect y="30" width="100" height="15"></rect>
+    <rect y="60" width="100" height="15"></rect>
+  </svg>
+</button>
+
 <nav class="sidenav">
   <ul>
     <li><a href="/">Home</a></li>
@@ -41,21 +49,4 @@
   </ul>
 </nav>
 
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const tripLinks = document.querySelectorAll(".trip-nav-name");
-
-    tripLinks.forEach((link) => {
-      link.addEventListener("click", (e) => {
-        e.preventDefault(); // Prevent the default link navigation
-
-        const daysList = link.nextElementSibling;
-
-        if (daysList && daysList.classList.contains("days-list")) {
-          daysList.style.display =
-            daysList.style.display === "block" ? "none" : "block";
-        }
-      });
-    });
-  });
-</script>
+<script defer src="/js/sidenav.js"></script>
