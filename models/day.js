@@ -18,6 +18,7 @@ const daySchema = new mongoose.Schema({
       required: true,
     },
   ],
+  cost: Number,
   description: { type: String, required: true },
   image: String,
   notes: String,

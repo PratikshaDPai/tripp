@@ -150,6 +150,9 @@ router.post("/:tripId/days", async (req, res) => {
   );
   day.description = activityTitles.join(", ").trim();
   day.name = capitalizeWords(day.name);
+  day.cost = day.activities
+    .map((activity) => activity.cost)
+    .reduce((accumulator, currentValue) => accumulator + currentValue, 0);
   await day.save();
   const trip = await Trip.findById(req.params.tripId);
   trip.days.push(day);
