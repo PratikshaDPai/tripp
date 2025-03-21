@@ -143,6 +143,12 @@ app.get("/search-location", async (req, res) => {
   }
 });
 
+// Error-handling middleware (must have 4 params)
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send("Internal Server Error");
+});
+
 // Start the server
 app.listen(port, () => {
   console.log(`Server running on port ${port}`);
