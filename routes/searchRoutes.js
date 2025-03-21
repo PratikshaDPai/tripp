@@ -4,6 +4,17 @@ const Trip = require("../models/trip");
 const Activity = require("../models/activity");
 const Location = require("../models/location");
 
+const authMiddleware = async (req, res, next) => {
+  if (!req.session.user) {
+    return res.redirect("/auth");
+  }
+
+  res.locals.trips = await Trip.find({ users: req.session.user });
+  next();
+};
+
+router.use(authMiddleware);
+
 // Search Trips
 router.get("/", async (req, res) => {
   const query = req.query.q || "";
