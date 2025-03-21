@@ -6,14 +6,13 @@
 
 # 📸 Screenshot/Logo
 
-*Screenshot will be added here.*  
-Landing Page: `![App Screenshot](./screenshot.png)`<br>
-Login page:<br>
-Trips Dashboard:<br>
-Trip view:<br>
-Day Create/Edit:<br>
-Day view:<br>
-Search for activity:<br>
+![Landing Page](https://github.com/user-attachments/assets/69697f12-0194-4ae3-a5ea-fb5b9ece9bba)<br>
+![Login Page](https://github.com/user-attachments/assets/23a2868d-bfe9-493b-8e88-3d5e9ecf2ae4)<br>
+![Trips Dashboard](https://github.com/user-attachments/assets/49ddf36e-d5e3-4c0c-8396-7845b083d23a)<br>
+![Trip view](https://github.com/user-attachments/assets/6d82e4e1-a0c6-48b3-bdd7-b68d81549872)<br>
+![Day Create/Edit](https://github.com/user-attachments/assets/31f2a0ea-6d9d-4b3d-9958-b676af1b5555)<br>
+![Day view](https://github.com/user-attachments/assets/bb13a0b7-b9c7-4141-a8a8-bc429c64c60a)<br>
+![Search for activity](https://github.com/user-attachments/assets/6c4f05c8-cdbe-448e-830c-7e8741e8d175)
 
 ---
 
