@@ -59,6 +59,25 @@ nav {
   background-color: #6ebac9;
 }
 
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.toggle-auth {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+#login-form,
+#signup-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
+}
 /* Trip List */
 .trip-list {
   list-style: none;

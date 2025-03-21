@@ -3,19 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Log in or Sign up - Tripp</title>
+    <title>Sign up/Login - Tripp</title>
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
     <div class="auth-container">
-      <h1>Log in or Sign up</h1>
+      <h1>Sign up or Log in</h1>
       <div class="toggle-auth">
-        <button id="show-login" class="active">Log In</button>
-        <button id="show-signup">Sign Up</button>
+        <button id="show-signup" class="share-button">Sign Up Here</button>
+        <button id="show-login" class="active edit-button">
+          Already a User? Log In
+        </button>
       </div>
 
       <!-- Login Form -->
-      <form id="login-form" action="/auth/sign-in" method="POST">
+      <form
+        id="login-form"
+        action="/auth/sign-in"
+        method="POST"
+        style="display: none"
+      >
         <% if (typeof authError !== "undefined") { %>
         <div class="error-message"><%= authError.message %></div>
         <% } %>
@@ -24,16 +31,16 @@
         <input type="text" name="username" id="username" required />
         <label for="password">Password:</label>
         <input type="password" name="password" id="password" required />
-        <button type="submit" class="btn btn-primary">Log In</button>
+        <button type="submit" class="btn btn-primary edit-button">
+          Log In
+        </button>
       </form>
 
       <!-- Signup Form (Initially Hidden) -->
-      <form
-        id="signup-form"
-        action="/auth/sign-up"
-        method="POST"
-        style="display: none"
-      >
+      <form id="signup-form" action="/auth/sign-up" method="POST">
+        <% if (typeof authError !== "undefined") { %>
+        <div class="error-message"><%= authError.message %></div>
+        <% } %>
         <label for="username">Username:</label>
         <input type="text" name="username" id="username" required />
         <label for="password">Password:</label>
@@ -45,7 +52,9 @@
           id="confirmPassword"
           required
         />
-        <button type="submit" class="btn btn-secondary">Sign Up</button>
+        <button type="submit" class="btn btn-secondary share-button">
+          Sign Up
+        </button>
       </form>
     </div>
 
@@ -53,7 +62,7 @@
       document
         .getElementById("show-login")
         .addEventListener("click", function () {
-          document.getElementById("login-form").style.display = "block";
+          document.getElementById("login-form").style.display = "flex";
           document.getElementById("signup-form").style.display = "none";
           this.classList.add("active");
           document.getElementById("show-signup").classList.remove("active");
@@ -62,7 +71,7 @@
       document
         .getElementById("show-signup")
         .addEventListener("click", function () {
-          document.getElementById("signup-form").style.display = "block";
+          document.getElementById("signup-form").style.display = "flex";
           document.getElementById("login-form").style.display = "none";
           this.classList.add("active");
           document.getElementById("show-login").classList.remove("active");
