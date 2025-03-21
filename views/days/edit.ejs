@@ -23,11 +23,20 @@
           value="<%= day.name %>"
           required
         />
-
+        <label for="date">Date:</label>
+        <input
+          type="date"
+          name="date"
+          id="date"
+          value="<%= day.date %>"
+          required
+        />
         <label for="description">Description:</label>
         <textarea name="description" id="description" rows="3" required>
 <%= day.description %></textarea
         >
+        <label for="notes">notes:</label>
+        <textarea name="notes" id="notes" rows="3"><%= day.notes %></textarea>
 
         <label for="image">Image URL:</label>
         <input type="text" name="image" id="image" value="<%= day.image %>" />
