@@ -356,3 +356,64 @@ nav ul li a:hover {
   margin-top: 5px;
   font-size: 0.9em;
 }
+
+select {
+  background-color: #c3e0e5; /* Match the sidebar color */
+  color: #4a4a4a; /* Match the text color */
+  border: 1px solid #4a4a4a; /* Subtle border */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  min-width: 180px;
+  min-height: 40px;
+  overflow-y: auto;
+}
+
+/* Style the dropdown arrow */
+select::-ms-expand {
+  display: none;
+}
+
+option:hover {
+  background-color: #a8d0db; /* Slightly darker hover effect */
+}
+
+select:focus {
+  outline: none;
+  border-color: #6a9fb5;
+  box-shadow: 0 0 5px rgba(106, 159, 181, 0.5);
+}
+.share {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #d8e2ec;
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+iframe {
+  height: 90%;
+  width: auto;
+}
+@media (max-width: 400px) {
+  body {
+    flex-direction: column;
+  }
+  .container {
+    max-width: 90%;
+  }
+
+  iframe {
+    width: 100%;
+    max-height: 50%;
+  }
+}
+
+option {
+  background-color: transparent;
+}

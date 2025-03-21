@@ -11,7 +11,7 @@
     <div>
       <h1>Share Trip: <%= trip.name %></h1>
 
-      <form action="/trips/<%= trip._id %>/share" method="POST">
+      <form action="/trips/<%= trip._id %>/share" method="POST" class="share">
         <label for="users">Select Users to Share With:</label>
         <select name="users" id="users" multiple required>
           <% usersNotInTrip.forEach(user => { %>
@@ -19,10 +19,10 @@
           <% }) %>
         </select>
 
-        <button type="submit">Share Trip</button>
+        <button type="submit" class="share-button">Share Trip</button>
       </form>
-
-      <a href="/trips/<%= trip._id %>">Cancel</a>
+      <p></p>
+      <a href="/trips/<%= trip._id %>" class="delete-button">Cancel</a>
     </div>
   </body>
 </html>
