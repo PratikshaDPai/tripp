@@ -18,12 +18,16 @@ router.post("/sign-up", async (req, res) => {
     // Check if username is taken
     const userExists = await User.findOne({ username });
     if (userExists) {
-      return res.send("Username already taken");
+      return res.render("auth/auth", {
+        loginError: { message: "Username already taken" },
+      });
     }
 
     // Check if passwords match
     if (password !== confirmPassword) {
-      return res.send("Password and Confirm password do not match!");
+      return res.render("auth/auth", {
+        loginError: { message: "Password and Confirm password do not match!" },
+      });
     }
 
     // Hash the password asynchronously
