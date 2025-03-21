@@ -27,6 +27,7 @@ router.get("/results", async (req, res) => {
     const searchQuery = req.query.q;
     const trips = await Trip.find({
       "days.name": { $regex: searchQuery, $options: "i" },
+      users: req.session.user,
     });
 
     const results = [];
