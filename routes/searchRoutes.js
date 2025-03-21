@@ -3,17 +3,9 @@ const router = express.Router();
 const Trip = require("../models/trip");
 const Activity = require("../models/activity");
 const Location = require("../models/location");
+const isSignedIn = require("../middleware/isSignedin");
 
-const authMiddleware = async (req, res, next) => {
-  if (!req.session.user) {
-    return res.redirect("/auth");
-  }
-
-  res.locals.trips = await Trip.find({ users: req.session.user });
-  next();
-};
-
-router.use(authMiddleware);
+router.use(isSignedIn);
 
 // Search Trips
 router.get("/", async (req, res) => {
