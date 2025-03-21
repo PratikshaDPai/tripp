@@ -134,6 +134,14 @@ router.delete("/:tripId/days/:dayId", async (req, res) => {
   res.redirect(`/trips/${req.params.tripId}`);
 });
 
+function capitalizeWords(str) {
+  return str
+    .toLowerCase()
+    .split(" ")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+}
+
 router.post("/:tripId/days", async (req, res) => {
   const day = await Day.create(req.body);
   await day.populate("activities");
@@ -141,6 +149,7 @@ router.post("/:tripId/days", async (req, res) => {
     (activity) => activity.title || ["no title"]
   );
   day.description = activityTitles.join(", ").trim();
+  day.name = capitalizeWords(day.name);
   await day.save();
   const trip = await Trip.findById(req.params.tripId);
   trip.days.push(day);
