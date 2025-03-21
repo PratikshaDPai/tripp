@@ -62,7 +62,12 @@ router.post("/sign-in", async (req, res) => {
   });
 
   if (!userInDatabase) {
-    return res.send("Login Failed. Please try again!");
+    return res.render("auth/auth", {
+      loginError: {
+        message: "Invalid username or password",
+        field: "username", // or 'password', or both
+      },
+    });
   }
   // bycrypt's comparison function
   const validPassword = bcrypt.compareSync(
@@ -71,7 +76,12 @@ router.post("/sign-in", async (req, res) => {
   );
 
   if (!validPassword) {
-    return res.send("Login Failed. Please try again!");
+    return res.render("auth/auth", {
+      loginError: {
+        message: "Invalid username or password",
+        field: "username", // or 'password', or both
+      },
+    });
   }
 
   // at this point, we've made it past verification
