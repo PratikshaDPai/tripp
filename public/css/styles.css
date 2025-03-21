@@ -5,7 +5,7 @@ body {
   color: #6c8088;
   font-family: "Arial", sans-serif;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   height: 100vh;
   margin: 0;
@@ -271,21 +271,24 @@ textarea {
 /* Sidebar Navigation */
 .sidenav {
   width: 250px;
-  height: 100vh;
-  background: #c7ddf1; /* Same as .trip-card */
+  height: 90vh;
+  max-height: 100vh;
+  background: #a9dee1;
   color: #6c8088;
   display: flex;
   flex-direction: column;
   padding: 20px;
   position: relative;
+  border-radius: 15px;
 }
 /* Navigation Links */
 
 nav ul {
+  padding: 10px;
   list-style: none;
 }
 nav ul li {
-  margin-bottom: 5px;
+  padding: 5px;
 }
 nav ul li a {
   text-decoration: none;
@@ -295,14 +298,25 @@ nav ul li a {
   border-radius: 5px;
 }
 
-nav ul li .open {
-  text-decoration: underline;
+.days-list {
+  display: flex;
+
+  padding: 0px;
+  margin: 0px;
+  margin-top: 10px;
+  background-color: #88c9db;
+  border-radius: 5px;
 }
-nav ul li ul {
-  padding-left: 15px;
+.days-list-item {
+  display: block;
+
+  color: #224e5f;
+  box-sizing: border-box;
 }
 
-.days-list {
+.days-list-item:hover {
   background-color: #a7cdf6;
-  color: #224e5f;
+}
+nav ul li a:hover {
+  background-color: rgb(112, 207, 209);
 }
