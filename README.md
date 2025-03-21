@@ -1,6 +1,6 @@
 # [Tripp](https://stormy-refuge-74791-ffd5288bd6f9.herokuapp.com/)🌍✈️
 
-**Tripp** is a travel planning app designed to make organizing your trips smooth and enjoyable. It allows users to plan their destinations, schedule activities, and manage travel logistics with ease. Born from a love of exploring new places and the frustration of scattered itineraries, Tripp brings everything into one simple interface.
+**Tripp** is a travel planning app designed to make organizing your trips smooth and enjoyable. It allows users to plan their destinations, schedule activities, and manage travel logistics with ease. Born from a love of exploring new places and the frustration of scattered itineraries, Tripp brings everything into one simple interface. It is also *responsive*. Try it out on mobile!
 
 ---
 
