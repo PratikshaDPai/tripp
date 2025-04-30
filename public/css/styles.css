@@ -11,8 +11,8 @@
 --add-button-hover:#ffca60;
 --delete-button:#f6baa7;
 --delete-button-hover:#e4a493;
---bgcolor: #F9F4EBff;
---container-color:#f9fcfe;
+--bgcolor: rgb(248, 237, 222);
+--container-color:rgb(254, 251, 246,0.7);
 }
 
 *,
