@@ -486,3 +486,7 @@ option {
 .over-budget {
   color: red;
 }
+
+.under-budget {
+  color: green;
+}

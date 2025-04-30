@@ -19,8 +19,11 @@
       </div>
       <h1>All Days</h1>
       <h2>
-        <% if (remainingBudget >= 0) { %> Remaining Budget: $<%= remainingBudget
-        %> <% } else { %>
+        <% if (remainingBudget >= 0) { %>
+        <span class="under-budget"
+          >Remaining Budget: $<%= remainingBudget %></span
+        >
+        <% } else { %>
         <span class="over-budget">Over budget by: $<%= -remainingBudget %></span
         ><% } %>
       </h2>
