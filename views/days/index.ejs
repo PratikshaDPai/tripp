@@ -18,6 +18,12 @@
         </form>
       </div>
       <h1>All Days</h1>
+      <h2>
+        <% if (remainingBudget >= 0) { %> Remaining Budget: $<%= remainingBudget
+        %> <% } else { %>
+        <span class="over-budget">Over budget by: $<%= -remainingBudget %></span
+        ><% } %>
+      </h2>
 
       <ul class="trip-list">
         <% days.forEach(day => { %>

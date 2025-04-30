@@ -482,3 +482,7 @@ iframe {
 option {
   background-color: transparent;
 }
+
+.over-budget {
+  color: red;
+}

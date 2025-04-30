@@ -46,7 +46,10 @@ router.get("/:tripId/edit", async (req, res) => {
 // GET a specific trip
 router.get("/:tripId", async (req, res) => {
   const trip = await Trip.findById(req.params.tripId);
-  res.render("days/index", { trip, days: trip.days });
+  trip.budget = trip.budget ?? 0;
+  const remainingBudget =
+    trip.budget - trip.days.reduce((sum, day) => sum + day.cost, 0);
+  res.render("days/index", { trip, days: trip.days, remainingBudget });
 });
 
 router.get("/:tripId/share", async (req, res) => {
