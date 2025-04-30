@@ -32,6 +32,24 @@ body {
   margin: 0;
 }
 
+.landing {
+  background-image: url('/assets/sandy-beach.png'); 
+  background-size: cover;       
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#landing-container{
+  background-color: rgba(250, 235, 215, 0.5);
+  height:70vh;
+}
+
+.logo {
+  background-color: rgba(250, 235, 215, 0.5);
+  min-height: 30vh;
+  border-radius: 20px;
+}
+
 .vertical {
   flex-direction: column;
   background-color:var(--bgcolor) ;
@@ -99,6 +117,9 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  background-color: var(--tile-color);
+  padding: 20px;
+  padding-bottom: 30px;
 }
 .toggle-auth {
   display: flex;
@@ -318,12 +339,7 @@ textarea {
   transform: scale(1.05);
 }
 
-.logo {
-  background-color: antiquewhite;
-  min-height: 50vh;
-  padding: 10px;
-  border-radius: 20px;
-}
+
 
 /* Sidebar Navigation */
 .sidenav {
@@ -335,6 +351,7 @@ textarea {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  margin-left: 10px;
   position: relative;
 
   border-radius: 15px;
