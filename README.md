@@ -12,8 +12,8 @@
 <br>
 ![Trips dashboard](https://github.com/user-attachments/assets/f0d66451-4919-4c7f-bb32-c86aa5d299f6)
 <br>
-![Trip View](https://github.com/user-attachments/assets/2acb4c74-49a0-4a08-8953-2ba9088d0703)<br>
 ![Day create/edit](https://github.com/user-attachments/assets/e4695eef-2917-49a8-ad90-bcf11fe8bb15)<br>
+![Trip View](https://github.com/user-attachments/assets/2acb4c74-49a0-4a08-8953-2ba9088d0703)<br>
 ![Day View](https://github.com/user-attachments/assets/663303d5-a08f-4519-881e-2f50f9f712f6)<br>
 ![search activity](https://github.com/user-attachments/assets/5237ca1b-d2a9-41ea-b294-3b6d134c36ee)
 
