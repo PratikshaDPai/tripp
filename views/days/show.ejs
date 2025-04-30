@@ -42,16 +42,15 @@
 
       <a href="/trips/<%=trip._id %>" class="back-link">← Back to Days</a>
     </div>
-    <iframe
-      width="600"
-      height="600"
-      style="border: 0"
-      loading="lazy"
-      allowfullscreen
-      referrerpolicy="no-referrer-when-downgrade"
-      src="https://www.google.com/maps/embed/v1/place?key=<%=apikey%>
-    &q=<%=location.name %>"
-    >
-    </iframe>
+      <div class="map-container">
+        <iframe
+          class="map"
+          style="border: 0"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps/embed/v1/place?key=<%=apikey%>&q=<%=location.name %>">
+        </iframe>
+      </div>
   </body>
 </html>

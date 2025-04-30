@@ -8,16 +8,16 @@
 
 <nav class="sidenav">
   <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/search">Search</a></li>
+    <li><a href="/"><img src="/assets/icons/home-icon.svg" alt="Home" class="nav-icon">Home</a></li>
+    <li><a href="/search"><img src="/assets/icons/search-icon.svg" alt="Search icon" class="nav-icon" />Search</a></li>
 
     <li>
-      <a href="/trips">Trips</a>
+      <a href="/trips"><img src="/assets/icons/suitcase.svg" alt="trip icon" class="nav-icon" />Trips</a>
       <ul class="trips-list">
         <% if (trips && trips.length > 0) { %> <% trips.forEach(trip => { %>
         <li>
           <a href="/trips/<%= trip._id %>" class="trip-nav-name"
-            ><%= trip.name %></a
+            ><img src="/assets/icons/right-arrow.svg" alt="arrow icon" class="nav-icon" /><%= trip.name %></a
           >
           <ul class="days-list" style="display: none">
             <% if (trip.days && trip.days.length > 0) { %> <%
@@ -42,7 +42,7 @@
 
     <% if (user) { %>
     <li id="sidenav-sign-out">
-      <a href="/auth/sign-out">Sign Out (<%=user.username%>)</a>
+      <a href="/auth/sign-out"><img src="/assets/icons/sign-out.svg" alt="Sign-out icon" class="nav-icon" />Sign Out (<%=user.username%>)</a>
     </li>
     <% } else { %>
     <li id="sidenav-sign-in"><a href="/auth/sign-in">Sign In</a></li>
