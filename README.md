@@ -6,7 +6,8 @@
 
 # 📸 Screenshot/Logo
 
-![Landing Page](https://github.com/user-attachments/assets/69697f12-0194-4ae3-a5ea-fb5b9ece9bba)<br>
+![Landing Page](https://github.com/user-attachments/assets/7a1bfe0f-eecd-4d2f-bfa8-d4959c105f49)
+<br>
 ![Login Page](https://github.com/user-attachments/assets/23a2868d-bfe9-493b-8e88-3d5e9ecf2ae4)<br>
 ![Trips Dashboard](https://github.com/user-attachments/assets/49ddf36e-d5e3-4c0c-8396-7845b083d23a)<br>
 ![Trip view](https://github.com/user-attachments/assets/6d82e4e1-a0c6-48b3-bdd7-b68d81549872)<br>
