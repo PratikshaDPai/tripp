@@ -4,7 +4,7 @@
 
 ---
 
-# 📸 Screenshot/Logo
+# 📸 Screenshots
 
 ![Landing Page](https://github.com/user-attachments/assets/7a1bfe0f-eecd-4d2f-bfa8-d4959c105f49)
 <br>
