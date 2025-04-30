@@ -1,8 +1,25 @@
 /* styles.css */
+/* all-days colors */
+:root{
+--navbar: #D7EADFff;
+--text: #305465ff;
+--tile-color: #FCFAF7ff;
+--edit-button:#BCE7DB;
+--edit-button-hover: #c7f4b5;
+--days-list-hover:#a7d4c7;
+--add-button: #f9d897;
+--add-button-hover:#ffca60;
+--delete-button:#f6baa7;
+--delete-button-hover:#e4a493;
+--bgcolor: #F9F4EBff;
+--container-color:#F8FCFE;
+}
+
+
 
 body {
-  background-color: #c0dcf7;
-  color: #6c8088;
+  background-color:var(--bgcolor);
+  color: var(--text);
   font-family: "Arial", sans-serif;
   display: flex;
   justify-content: center;
@@ -13,7 +30,7 @@ body {
 
 .vertical {
   flex-direction: column;
-  background-color: #a7cdf6;
+  background-color:var(--bgcolor) ;
 }
 
 h1 {
@@ -30,10 +47,10 @@ h1 {
 
 .container {
   text-align: center;
-  background-color: rgb(216, 223, 231);
+  background-color: var(--container-color);
   padding: 2rem;
   border-radius: 12px;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); */
   width: 80%;
   max-width: 800px;
 }
@@ -46,7 +63,7 @@ nav {
 }
 
 .nav-link {
-  background-color: #88dbbd;
+  background-color:var(--add-button);
   padding: 10px 15px;
   border-radius: 8px;
   text-decoration: none;
@@ -56,7 +73,8 @@ nav {
 }
 
 .nav-link:hover {
-  background-color: #6ebac9;
+  background-color:var(--add-button-hover);
+  transform: scale(1.05);
 }
 
 .auth-container {
@@ -96,7 +114,7 @@ nav {
 }
 
 .trip-card {
-  background: rgb(215, 219, 250);
+  background: var(--tile-color);
   border-radius: 8px;
   padding: 10px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
@@ -135,9 +153,9 @@ img {
   max-height: 300px;
   object-fit: scale-down;
   border-radius: 8px;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); */
   margin-bottom: 20px;
-  background-color: rgb(215, 220, 250);
+  background-color: var(--tile-color);
 }
 
 /* Button Group */
@@ -162,23 +180,23 @@ img {
 
 /* Delete Button */
 .delete-button {
-  background-color: #f6baa7;
+  background-color: var(--delete-button);
   color: #886c6c;
 }
 
 .delete-button:hover {
-  background-color: #e4a493;
+  background-color: var(--delete-button-hover);
   transform: scale(1.05);
 }
 
 /* Edit Button */
 .edit-button {
-  background-color: #d3db88;
+  background-color: var(--edit-button);
   color: #6c886c;
 }
 
 .edit-button:hover {
-  background-color: #c2c96e;
+  background-color: var(--edit-button-hover);
   transform: scale(1.05);
 }
 
@@ -264,7 +282,7 @@ textarea {
 /* Add Trip Button */
 .add-button,
 .get-started-button {
-  background-color: #d3db88;
+  background-color: var(--add-button);
   border: none;
   padding: 12px 20px;
   font-size: 1rem;
@@ -277,14 +295,14 @@ textarea {
 
 .add-button:hover,
 .get-started-button:hover {
-  background-color: #c2c96e;
+  background-color: var(--add-button-hover);
   transform: scale(1.05);
 }
 
 .logo {
   background-color: antiquewhite;
   padding: 10px;
-  border-radius: 20%;
+  border-radius: 20px;
 }
 
 /* Sidebar Navigation */
@@ -292,7 +310,7 @@ textarea {
   width: 250px;
   height: 90vh;
   max-height: 100vh;
-  background: #a9dee1;
+  background: var(--navbar);
   color: #6c8088;
   display: flex;
   flex-direction: column;
@@ -326,7 +344,7 @@ nav ul li a {
   padding: 0px;
   margin: 0px;
   margin-top: 10px;
-  background-color: #88c9db;
+  background-color: var(--edit-button);
   border-radius: 5px;
 }
 .days-list-item,
@@ -350,17 +368,17 @@ nav ul li a {
   margin: 5px;
   width: 100%;
   border-radius: 10px;
-  background-color: #d0e8ef;
+  background-color: var(--navbar);
 }
 .search-result-list-item:hover {
-  background-color: rgb(112, 207, 209);
+  background-color: var(--edit-button);
 }
 
 .days-list-item:hover {
-  background-color: #a7cdf6;
+  background-color: var(--days-list-hover);
 }
 nav ul li a:hover {
-  background-color: rgb(112, 207, 209);
+  background-color: var(--edit-button);
 }
 
 .search-results {
