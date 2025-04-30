@@ -8,12 +8,15 @@
 
 ![Landing Page](https://github.com/user-attachments/assets/7a1bfe0f-eecd-4d2f-bfa8-d4959c105f49)
 <br>
-![Login Page](https://github.com/user-attachments/assets/23a2868d-bfe9-493b-8e88-3d5e9ecf2ae4)<br>
-![Trips Dashboard](https://github.com/user-attachments/assets/49ddf36e-d5e3-4c0c-8396-7845b083d23a)<br>
-![Trip view](https://github.com/user-attachments/assets/6d82e4e1-a0c6-48b3-bdd7-b68d81549872)<br>
-![Day Create/Edit](https://github.com/user-attachments/assets/31f2a0ea-6d9d-4b3d-9958-b676af1b5555)<br>
-![Day view](https://github.com/user-attachments/assets/bb13a0b7-b9c7-4141-a8a8-bc429c64c60a)<br>
-![Search for activity](https://github.com/user-attachments/assets/6c4f05c8-cdbe-448e-830c-7e8741e8d175)
+![login page](https://github.com/user-attachments/assets/f7565105-98c6-4849-9bca-ea3e221941aa)
+<br>
+![Trips dashboard](https://github.com/user-attachments/assets/f0d66451-4919-4c7f-bb32-c86aa5d299f6)
+<br>
+![Trip View](https://github.com/user-attachments/assets/2acb4c74-49a0-4a08-8953-2ba9088d0703)<br>
+![Day create/edit](https://github.com/user-attachments/assets/e4695eef-2917-49a8-ad90-bcf11fe8bb15)<br>
+![Day View](https://github.com/user-attachments/assets/663303d5-a08f-4519-881e-2f50f9f712f6)<br>
+![search activity](https://github.com/user-attachments/assets/5237ca1b-d2a9-41ea-b294-3b6d134c36ee)
+
 
 ---
 
