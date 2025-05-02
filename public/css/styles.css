@@ -30,6 +30,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  gap:15px;
 }
 
 .landing {
@@ -211,6 +212,8 @@ img {
 .share-button {
   border: none;
   padding: 12px 20px;
+  min-width: 100px;
+  max-width: 150px;
   font-size: 1rem;
   font-weight: bold;
   border-radius: 8px;
@@ -343,7 +346,8 @@ textarea {
 
 /* Sidebar Navigation */
 .sidenav {
-  width: 250px;
+  min-width: 250px;
+  max-width:300px;
   height: 90vh;
   overflow-y: auto;
   background: var(--navbar);
@@ -352,8 +356,9 @@ textarea {
   flex-direction: column;
   padding: 20px;
   margin-left: 10px;
+  margin-bottom: 0%;
+  flex-grow: 1;
   position: relative;
-
   border-radius: 15px;
 }
 /* Navigation Links */
@@ -471,11 +476,13 @@ select:focus {
   text-align: center;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
-iframe {
-  display: block;
-  height: 95vh;
+.map {
+  display: flex;
+  flex-grow:0;
+  height: 90vh;
   max-height: 100vh;
-  width: auto;
+  width:50vh;
+  max-width: 50vh;
 }
 
 /* Hamburger Menu Button */
@@ -504,17 +511,10 @@ iframe {
 }
 
 
-.map-container {
-  flex-grow: 1;
+/* .map-container {
   height: 90vh;
   display: flex;
-}
-
-.map {
-  flex-grow: 1;
-  width: 100%;
-  height: 100%;
-}
+} */
 
 
 @media (max-width: 500px) {
