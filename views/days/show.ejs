@@ -7,10 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%= day.name %></title>
     <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
   </head>
   <body>
     <%- include('../partials/_navbar.ejs') %>
     <div class="container">
+      <div class="button-group">
+        <form
+          action="/trips/<%=trip._id %>/days/<%=day._id%>/edit"
+          method="GET"
+        >
+          <button type="submit" class="edit-button fixed-icon">
+            <i class="fas fa-edit"></i>
+          </button>
+        </form>
+
+        <form
+          action="/trips/<%=trip._id %>/days/<%=day._id%>?_method=DELETE"
+          method="POST"
+        >
+          <button type="submit" class="delete-button fixed-icon">
+            <i class="fas fa-trash-alt"></i>
+          </button>
+        </form>
+      </div>
+
       <h1 class="trip-title"><%= day.name %></h1>
       <h2><%=day.date%></h2>
       <img
@@ -25,32 +49,18 @@
       <p>$<%= day.cost %></p>
       <p class="notes"><%= day.notes? day.notes : "" %></p>
 
-      <div class="button-group">
-        <form
-          action="/trips/<%=trip._id %>/days/<%=day._id%>?_method=DELETE"
-          method="POST"
-        >
-          <button type="submit" class="delete-button">Delete</button>
-        </form>
-        <form
-          action="/trips/<%=trip._id %>/days/<%=day._id%>/edit"
-          method="GET"
-        >
-          <button type="submit" class="edit-button">Edit</button>
-        </form>
-      </div>
-
       <a href="/trips/<%=trip._id %>" class="back-link">← Back to Days</a>
     </div>
-      <div class="map-container">
-        <iframe
-          class="map"
-          style="border: 0"
-          loading="lazy"
-          allowfullscreen
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps/embed/v1/place?key=<%=apikey%>&q=<%=location.name %>">
-        </iframe>
-      </div>
+    <div class="map-container">
+      <iframe
+        class="map"
+        style="border: 0"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="no-referrer-when-downgrade"
+        src="https://www.google.com/maps/embed/v1/place?key=<%=apikey%>&q=<%=location.name %>"
+      >
+      </iframe>
+    </div>
   </body>
 </html>

@@ -1,18 +1,18 @@
 /* styles.css */
 /* all-days colors */
-:root{
---navbar: #D7EADFff;
---text: #305465ff;
---tile-color: #FCFAF7ff;
---edit-button:#BCE7DB;
---edit-button-hover: #c7f4b5;
---days-list-hover:#a7d4c7;
---add-button: #f9d897;
---add-button-hover:#ffca60;
---delete-button:#f6baa7;
---delete-button-hover:#e4a493;
---bgcolor: rgb(248, 237, 222);
---container-color:rgb(254, 251, 246,0.7);
+:root {
+  --navbar: #d7eadfff;
+  --text: #305465ff;
+  --tile-color: #fcfaf7ff;
+  --edit-button: #bce7db;
+  --edit-button-hover: #c7f4b5;
+  --days-list-hover: #a7d4c7;
+  --add-button: #f9d897;
+  --add-button-hover: #ffca60;
+  --delete-button: #f6baa7;
+  --delete-button-hover: #e4a493;
+  --bgcolor: rgb(248, 237, 222);
+  --container-color: rgb(254, 251, 246, 0.7);
 }
 
 *,
@@ -22,7 +22,7 @@
 }
 
 body {
-  background-color:var(--bgcolor);
+  background-color: var(--bgcolor);
   color: var(--text);
   font-family: "Arial", sans-serif;
   display: flex;
@@ -30,19 +30,19 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  gap:15px;
+  gap: 15px;
 }
 
 .landing {
-  background-image: url('/assets/sandy-beach.png'); 
-  background-size: cover;       
+  background-image: url("/assets/sandy-beach.png");
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-#landing-container{
+#landing-container {
   background-color: rgba(250, 235, 215, 0.5);
-  height:70vh;
+  height: 70vh;
 }
 
 .logo {
@@ -53,7 +53,7 @@ body {
 
 .vertical {
   flex-direction: column;
-  background-color:var(--bgcolor) ;
+  background-color: var(--bgcolor);
 }
 
 h1 {
@@ -89,7 +89,7 @@ nav {
 }
 
 .nav-link {
-  background-color:var(--add-button);
+  background-color: var(--add-button);
   padding: 10px 15px;
   border-radius: 8px;
   text-decoration: none;
@@ -99,7 +99,7 @@ nav {
 }
 
 .nav-link:hover {
-  background-color:var(--add-button-hover);
+  background-color: var(--add-button-hover);
   transform: scale(1.05);
 }
 
@@ -107,7 +107,7 @@ nav {
   width: 20px;
   height: 20px;
   object-fit: contain;
-  vertical-align:middle;
+  vertical-align: middle;
   margin-right: 5px;
   margin-bottom: 5px;
   background-color: inherit;
@@ -202,7 +202,8 @@ img {
 /* Button Group */
 .button-group {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
+  gap: 10px;
   margin-bottom: 20px;
 }
 
@@ -342,12 +343,10 @@ textarea {
   transform: scale(1.05);
 }
 
-
-
 /* Sidebar Navigation */
 .sidenav {
   min-width: 250px;
-  max-width:300px;
+  max-width: 300px;
   height: 90vh;
   overflow-y: auto;
   background: var(--navbar);
@@ -478,10 +477,10 @@ select:focus {
 }
 .map {
   display: flex;
-  flex-grow:0;
+  flex-grow: 0;
   height: 90vh;
   max-height: 100vh;
-  width:50vh;
+  width: 50vh;
   max-width: 50vh;
 }
 
@@ -510,12 +509,10 @@ select:focus {
   transform: scale(1.1);
 }
 
-
 /* .map-container {
   height: 90vh;
   display: flex;
 } */
-
 
 @media (max-width: 500px) {
   body {
@@ -558,4 +555,25 @@ option {
 
 .under-budget {
   color: green;
+}
+
+.fixed-icon i {
+  min-width: 0px;
+  min-height: 0px;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.fixed-icon {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  min-width: 0px;
+  min-height: 0px;
+  justify-content: center;
+  aspect-ratio: 1;
+  cursor: pointer;
+  padding: 10px;
 }
